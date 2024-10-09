@@ -1,8 +1,7 @@
-name: Build and deploy docs to GitHub Pages
+name: deploy
 on:
   push:
     branches:
-      - master
       - main
 permissions:
   contents: write
@@ -18,9 +17,10 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - name: Install dependencies
-        run: |
-          sudo apt-get install doxygen
-          pip install mkdoxy
-      - name: Build docs
-        run: mkdocs gh-deploy --force
+      - run: pip install mkdocs-material
+      - run: pip install pillow cairosvg
+      - run: sudo apt-get install doxygen doxygen-doc doxygen-gui graphviz
+      - run: pip install mkdocs
+      - run: pip install mkdoxy
+      - run: npm install moxygen -g
+      - run: mkdocs gh-deploy --force
