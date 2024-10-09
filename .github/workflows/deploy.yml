@@ -20,5 +20,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: pip install mkdocs
+      - run: pip install mkdoxy
       - run: npm install moxygen -g
       - run: mkdocs gh-deploy --force
