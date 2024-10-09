@@ -1,4 +1,5 @@
 site_name: Documentation
+site_url: https://analyticace.github.io/r-type-docs/
 site_description: >-
   R-Type is a side-scrolling shoot-em-up arcade game produced by Irem in 1987. 
   The player controls a space fighter named the R-9 to defend humanity against a mysterious powerful alien lifeform known as the Bydo. 
@@ -10,6 +11,7 @@ repo_url: https://github.com/AnalyticAce/r-type-docs
 # Copyright
 copyright: Copyright &copy; 2024 R-Type-Group - All rights reserved.
 
+# windmill-dark, bootstrap386, material, readthedocs, mkdocs, simple-blog, terminal, dracula
 theme:
   name: material
   features:
@@ -51,6 +53,27 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+    - search
+    - mkdoxy:
+          projects:
+              B-CPP-500-COT-5-1-rtype-kafui.hounkpatin:
+                  src-dirs: include/ src/
+                  full-doc: True
+                  doxy-cfg:
+                      FILE_PATTERNS: "*.cpp *.hpp"
+                      RECURSIVE: True
+                      EXTRACT_ALL: True
+          save-api: .mkdoxy
+          full-doc: True
+          debug: False
+          ignore-errors: False
+          emojis-enabled: True
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -87,9 +110,52 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.mark
   - attr_list
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - def_list
+  - toc:
+      permalink: True
+  - markdown.extensions.md_in_html
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.blocks.admonition:
+      types:
+        - new
+        - settings
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.tab
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
   - Home: index.md
@@ -104,9 +170,21 @@ nav:
       - Diagrams: architecture/diagrams.md
       - ECS Design Pattern: architecture/ecs.md
   - Developer Guide:
-      - Code Structure: developer_guide/code_structure.md
-      - Key Classes & Modules: developer_guide/key_classes.md
-      - API Documentation: developer_guide/api_documentation.md
+      - Snippets:
+          - Classes: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/classes.md"
+          - Links: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/links.md"
+          - Functions: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/functions.md"
+          - Namespaces: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/namespaces.md"
+          - Files: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/files.md"
+      - API Documentation:
+          - Class List: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/annotated.md
+          - Class Index: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/classes.md
+          - Class Hierarchy: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/hierarchy.md
+          - Class Members: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_members.md
+          - Class Member Functions: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_functions.md
+          - Class Member Variables: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_variables.md
+          - Class Member Typedefs: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_typedefs.md
+          - Class Member Enumerations: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_enums.md
       - How-To Guides: developer_guide/how_to_guides.md
       - Contributing: developer_guide/contributing.md
   - Networking:
