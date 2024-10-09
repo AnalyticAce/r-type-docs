@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structServer_1_1ClientInfo" kind="struct" language="C++" prot="private">
+    <compoundname>Server::ClientInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structServer_1_1ClientInfo_1affb40f58299aed560d77e0f45779881e" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point Server::ClientInfo::last_ping</definition>
+        <argsstring></argsstring>
+        <name>last_ping</name>
+        <qualifiedname>Server::ClientInfo::last_ping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="113" column="43" bodyfile="src/Server/include/Server.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/Server.hpp" line="112" column="3" bodyfile="src/Server/include/Server.hpp" bodystart="112" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structServer_1_1ClientInfo_1affb40f58299aed560d77e0f45779881e" prot="public" virt="non-virtual"><scope>Server::ClientInfo</scope><name>last_ping</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

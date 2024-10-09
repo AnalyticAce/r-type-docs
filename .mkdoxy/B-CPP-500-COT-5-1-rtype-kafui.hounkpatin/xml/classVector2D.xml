@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classVector2D" kind="class" language="C++" prot="public">
+    <compoundname>Vector2D</compoundname>
+    <includes refid="GameLogic_2Vector_8hpp" local="no">Vector.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classVector2D_1ac5c4e553815737aa24bec8281270178f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Vector2D::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Vector2D::x</qualifiedname>
+        <briefdescription>
+<para>The x component of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="32" column="10" bodyfile="src/GameLogic/Vector.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classVector2D_1ac38d0179cfe74c30fee290a703ab209a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Vector2D::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Vector2D::y</qualifiedname>
+        <briefdescription>
+<para>The y component of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="33" column="10" bodyfile="src/GameLogic/Vector.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classVector2D_1a98e9997ebb7a629f4db52397d4e0d653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2D::Vector2D</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2D</name>
+        <qualifiedname>Vector2D::Vector2D</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Initializes the vector to (0,0,0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="38" column="3" bodyfile="src/GameLogic/Vector.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a525e125aac4c844f04c52ddb0e75d594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2D::Vector2D</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Vector2D</name>
+        <qualifiedname>Vector2D::Vector2D</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x component of the vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y component of the vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="45" column="3" bodyfile="src/GameLogic/Vector.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1ab08635b0482451cc43b5b399034eff2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <qualifiedname>Vector2D::length</qualifiedname>
+        <briefdescription>
+<para>Calculates the length of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="51" column="10" bodyfile="src/GameLogic/Vector.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1aa50e02d1ccaa6004f0251fbb795bf5b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::vector_unit</definition>
+        <argsstring>() const</argsstring>
+        <name>vector_unit</name>
+        <qualifiedname>Vector2D::vector_unit</qualifiedname>
+        <briefdescription>
+<para>Calculates the unit vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The unit vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="57" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1acd8224bbfb5080c324ea669a685083a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::operator/=</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>operator/=</name>
+        <qualifiedname>Vector2D::operator/=</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the /= operator for scalar division. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar to divide the vector by. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The vector itself after division. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="64" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a7ebf0f26823b095ec64722b3b1e1cc24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::operator/</definition>
+        <argsstring>(double scalar) const</argsstring>
+        <name>operator/</name>
+        <qualifiedname>Vector2D::operator/</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the / operator for scalar division. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar to divide the vector by. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector that is the result of the division. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="75" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1aedca2e0def2c047e2c6ee15572e63780" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::dot</definition>
+        <argsstring>(const Vector2D &amp;other) const</argsstring>
+        <name>dot</name>
+        <qualifiedname>Vector2D::dot</qualifiedname>
+        <param>
+          <type>const <ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the dot product with another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dot product. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="86" column="10" bodyfile="src/GameLogic/Vector.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a941b244c488b9266a91bb143c9ce5554" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::length_squared</definition>
+        <argsstring>() const</argsstring>
+        <name>length_squared</name>
+        <qualifiedname>Vector2D::length_squared</qualifiedname>
+        <briefdescription>
+<para>Calculates the squared length of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The squared length of the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="92" column="10" bodyfile="src/GameLogic/Vector.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a0bb684df2d724e4378dc5fbf0d4faa99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <qualifiedname>Vector2D::normalize</qualifiedname>
+        <briefdescription>
+<para>Normalizes a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to normalize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The normalized vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="99" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a919e3f060b98a77dbc63fa4312a18ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::add</definition>
+        <argsstring>(const Vector2D &amp;v)</argsstring>
+        <name>add</name>
+        <qualifiedname>Vector2D::add</qualifiedname>
+        <param>
+          <type>const <ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="109" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a46624701d6c7814a763b3b5d1820ec19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::scale</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scale</name>
+        <qualifiedname>Vector2D::scale</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>scale the vector by a scalar </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classVector2D" kindref="compound">Vector2D</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="118" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a11a15f2a205a52747ca9fb370aa54f03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::rotate</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>rotate</name>
+        <qualifiedname>Vector2D::rotate</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Vector.hpp" line="130" column="12" bodyfile="src/GameLogic/Vector.hpp" bodystart="130" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a98e9997ebb7a629f4db52397d4e0d653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2D::Vector2D</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2D</name>
+        <qualifiedname>Vector2D::Vector2D</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Initializes the vector to (0,0,0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="38" column="3" bodyfile="src/Server/include/Vector.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a525e125aac4c844f04c52ddb0e75d594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector2D::Vector2D</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Vector2D</name>
+        <qualifiedname>Vector2D::Vector2D</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x component of the vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y component of the vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="45" column="3" bodyfile="src/Server/include/Vector.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1ab08635b0482451cc43b5b399034eff2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <qualifiedname>Vector2D::length</qualifiedname>
+        <briefdescription>
+<para>Calculates the length of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="51" column="10" bodyfile="src/Server/include/Vector.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1aa50e02d1ccaa6004f0251fbb795bf5b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::vector_unit</definition>
+        <argsstring>() const</argsstring>
+        <name>vector_unit</name>
+        <qualifiedname>Vector2D::vector_unit</qualifiedname>
+        <briefdescription>
+<para>Calculates the unit vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The unit vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="57" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1acd8224bbfb5080c324ea669a685083a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::operator/=</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>operator/=</name>
+        <qualifiedname>Vector2D::operator/=</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the /= operator for scalar division. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar to divide the vector by. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The vector itself after division. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="64" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a7ebf0f26823b095ec64722b3b1e1cc24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::operator/</definition>
+        <argsstring>(double scalar) const</argsstring>
+        <name>operator/</name>
+        <qualifiedname>Vector2D::operator/</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the / operator for scalar division. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar to divide the vector by. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector that is the result of the division. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="75" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1aedca2e0def2c047e2c6ee15572e63780" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::dot</definition>
+        <argsstring>(const Vector2D &amp;other) const</argsstring>
+        <name>dot</name>
+        <qualifiedname>Vector2D::dot</qualifiedname>
+        <param>
+          <type>const <ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the dot product with another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dot product. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="86" column="10" bodyfile="src/Server/include/Vector.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a941b244c488b9266a91bb143c9ce5554" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vector2D::length_squared</definition>
+        <argsstring>() const</argsstring>
+        <name>length_squared</name>
+        <qualifiedname>Vector2D::length_squared</qualifiedname>
+        <briefdescription>
+<para>Calculates the squared length of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The squared length of the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="92" column="10" bodyfile="src/Server/include/Vector.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a0bb684df2d724e4378dc5fbf0d4faa99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Vector2D::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <qualifiedname>Vector2D::normalize</qualifiedname>
+        <briefdescription>
+<para>Normalizes a vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to normalize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The normalized vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="99" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a919e3f060b98a77dbc63fa4312a18ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::add</definition>
+        <argsstring>(const Vector2D &amp;v)</argsstring>
+        <name>add</name>
+        <qualifiedname>Vector2D::add</qualifiedname>
+        <param>
+          <type>const <ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="109" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a46624701d6c7814a763b3b5d1820ec19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::scale</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scale</name>
+        <qualifiedname>Vector2D::scale</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>scale the vector by a scalar </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scalar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classVector2D" kindref="compound">Vector2D</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="118" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classVector2D_1a11a15f2a205a52747ca9fb370aa54f03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D &amp; Vector2D::rotate</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>rotate</name>
+        <qualifiedname>Vector2D::rotate</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Vector.hpp" line="130" column="12" bodyfile="src/Server/include/Vector.hpp" bodystart="130" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class to represent a 2D vector. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Vector.hpp" line="30" column="1" bodyfile="src/GameLogic/Vector.hpp" bodystart="30" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classVector2D_1a919e3f060b98a77dbc63fa4312a18ac3" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>add</name></member>
+      <member refid="classVector2D_1a919e3f060b98a77dbc63fa4312a18ac3" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>add</name></member>
+      <member refid="classVector2D_1aedca2e0def2c047e2c6ee15572e63780" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>dot</name></member>
+      <member refid="classVector2D_1aedca2e0def2c047e2c6ee15572e63780" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>dot</name></member>
+      <member refid="classVector2D_1ab08635b0482451cc43b5b399034eff2f" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>length</name></member>
+      <member refid="classVector2D_1ab08635b0482451cc43b5b399034eff2f" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>length</name></member>
+      <member refid="classVector2D_1a941b244c488b9266a91bb143c9ce5554" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>length_squared</name></member>
+      <member refid="classVector2D_1a941b244c488b9266a91bb143c9ce5554" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>length_squared</name></member>
+      <member refid="classVector2D_1a0bb684df2d724e4378dc5fbf0d4faa99" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>normalize</name></member>
+      <member refid="classVector2D_1a0bb684df2d724e4378dc5fbf0d4faa99" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>normalize</name></member>
+      <member refid="classVector2D_1a7ebf0f26823b095ec64722b3b1e1cc24" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>operator/</name></member>
+      <member refid="classVector2D_1a7ebf0f26823b095ec64722b3b1e1cc24" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>operator/</name></member>
+      <member refid="classVector2D_1acd8224bbfb5080c324ea669a685083a3" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>operator/=</name></member>
+      <member refid="classVector2D_1acd8224bbfb5080c324ea669a685083a3" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>operator/=</name></member>
+      <member refid="classVector2D_1a11a15f2a205a52747ca9fb370aa54f03" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>rotate</name></member>
+      <member refid="classVector2D_1a11a15f2a205a52747ca9fb370aa54f03" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>rotate</name></member>
+      <member refid="classVector2D_1a46624701d6c7814a763b3b5d1820ec19" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>scale</name></member>
+      <member refid="classVector2D_1a46624701d6c7814a763b3b5d1820ec19" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>scale</name></member>
+      <member refid="classVector2D_1a98e9997ebb7a629f4db52397d4e0d653" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classVector2D_1a525e125aac4c844f04c52ddb0e75d594" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classVector2D_1a98e9997ebb7a629f4db52397d4e0d653" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classVector2D_1a525e125aac4c844f04c52ddb0e75d594" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classVector2D_1aa50e02d1ccaa6004f0251fbb795bf5b4" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>vector_unit</name></member>
+      <member refid="classVector2D_1aa50e02d1ccaa6004f0251fbb795bf5b4" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>vector_unit</name></member>
+      <member refid="classVector2D_1ac5c4e553815737aa24bec8281270178f" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>x</name></member>
+      <member refid="classVector2D_1ac38d0179cfe74c30fee290a703ab209a" prot="public" virt="non-virtual"><scope>Vector2D</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

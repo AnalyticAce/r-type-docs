@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTextInputManager" kind="class" language="C++" prot="public">
+    <compoundname>TextInputManager</compoundname>
+    <includes refid="Setting_8hpp" local="no">Setting.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Client/Setting/Setting.hpp" line="34" column="1" bodyfile="src/Client/Setting/Setting.hpp" bodystart="34" bodyend="38"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

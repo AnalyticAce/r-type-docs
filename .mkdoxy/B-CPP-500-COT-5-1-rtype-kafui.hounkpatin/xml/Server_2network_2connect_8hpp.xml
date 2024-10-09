@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Server_2network_2connect_8hpp" kind="file" language="C++">
+    <compoundname>connect.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="Server_2main_8cpp" local="yes">src/Server/main.cpp</includedby>
+    <includedby refid="Server_2network_2connect_8cpp" local="yes">src/Server/network/connect.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Server/network/connect.hpp</label>
+        <link refid="Server_2network_2connect_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/Server/network/connect.hpp</label>
+        <link refid="Server_2network_2connect_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/Server/main.cpp</label>
+        <link refid="Server_2main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/Server/network/connect.cpp</label>
+        <link refid="Server_2network_2connect_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classServer" prot="public">Server</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVER_GAME_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVER_GAME_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classServer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer" kindref="compound">Server</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="classServer_1ad5ec9462b520e59f7ea831e157ee5e59" kindref="member">Server</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><ref refid="classServer_1a4b3aa2579cb1c8cd1d069582c14d0fa6" kindref="member">~Server</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classServer_1ab600ed5f7055d0b1e29bafa451c5adce" kindref="member">connect</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SERVER_GAME_HPP</highlight></codeline>
+    </programlisting>
+    <location file="include/Server/network/connect.hpp"/>
+  </compounddef>
+</doxygen>

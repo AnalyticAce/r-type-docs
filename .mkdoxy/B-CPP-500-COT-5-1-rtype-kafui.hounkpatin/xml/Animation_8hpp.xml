@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Animation_8hpp" kind="file" language="C++">
+    <compoundname>Animation.hpp</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes local="no">SFML/Window.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includedby refid="Animation_8cpp" local="yes">src/Engine/Animation/Animation.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Engine/Animation/Animation.hpp</label>
+        <link refid="Animation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="3">
+        <label>SFML/Window.hpp</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/Engine/Animation/Animation.hpp</label>
+        <link refid="Animation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/Engine/Animation/Animation.cpp</label>
+        <link refid="Animation_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structAnimationData" prot="public">AnimationData</innerclass>
+    <innerclass refid="classAnimation" prot="public">Animation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ANIMATION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANIMATION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Window.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structAnimationData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structAnimationData" kindref="compound">AnimationData</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Sprite<sp/><ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>;</highlight></codeline>
+<codeline lineno="11" refid="structAnimationData_1ad5ce4054939bef7ce5788c84663e0929" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structAnimationData_1ad5ce4054939bef7ce5788c84663e0929" kindref="member">totalFrames</ref>;</highlight></codeline>
+<codeline lineno="12" refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" kindref="member">currentFrame</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structAnimationData_1a70ddf42be041189d60e96d93960a661e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Clock<sp/><ref refid="structAnimationData_1a70ddf42be041189d60e96d93960a661e" kindref="member">clock</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classAnimation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAnimation" kindref="compound">Animation</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Sprite<sp/>sprite;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Texture<sp/>texture;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>sf::Texture&gt;<sp/>animations;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frameTime;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currentFrame;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>totalFrames;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sf::Clock<sp/>clock;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>AnimationData&gt;<sp/>animationsData;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAnimation_1a83f0a16cef7117f187ad596de38dd9d6" kindref="member">Animation</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAnimation_1a401b68793d4fbf48d481c030ee4b2a16" kindref="member">~Animation</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aba09272a26f72ae01026a91c581fbff6" kindref="member">loadAnimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frames);<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a90b64e1f99db05a8064ac58d8c43dc8c" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aaa3c62ae9b5bb72246379a2111ca9d24" kindref="member">render</ref>(sf::RenderWindow&amp;<sp/>window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aaf1fc296e5777e3826e5d6d3937a701d" kindref="member">setScale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a41f7da50ddbf70faecb33a84f10d9cc6" kindref="member">setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a9260482303623c5efebe69c7212c2868" kindref="member">moveY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedY);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1abffaa3556d58f0c6d75000f82f797731" kindref="member">moveYUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedY);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aa14154e366385bfea01574268fa9c002" kindref="member">moveXRight</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedX);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1ada037d97063cd8451b326bace051a791" kindref="member">moveXLeft</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedX);</highlight></codeline>
+<codeline lineno="41" refid="classAnimation_1adc3d127aedf807dccbfaae49290f3c76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Sprite&amp;<sp/><ref refid="classAnimation_1adc3d127aedf807dccbfaae49290f3c76" kindref="member">getSprite</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sprite;<sp/>}<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/Engine/Animation/Animation.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classCirShape" kind="class" language="C++" prot="public">
+    <compoundname>CirShape</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" prot="public" static="no" mutable="no">
+        <type>sf::CircleShape</type>
+        <definition>sf::CircleShape CirShape::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>CirShape::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="37" column="19" bodyfile="src/GameLogic/Entity.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCirShape_1a3afa1b88f983d3ff6fe79dcc43dd5dc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CirShape::CirShape</definition>
+        <argsstring>()</argsstring>
+        <name>CirShape</name>
+        <qualifiedname>CirShape::CirShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="38" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classCirShape_1a35e13b1332cf4c8365abf14c6db4efcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CirShape::CirShape</definition>
+        <argsstring>(float radius, int point_count, sf::Color out_color, sf::Color in_color, int thikness)</argsstring>
+        <name>CirShape</name>
+        <qualifiedname>CirShape::CirShape</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>point_count</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>out_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>in_color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>thikness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="39" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="39" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="35" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="35" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classCirShape_1a3afa1b88f983d3ff6fe79dcc43dd5dc1" prot="public" virt="non-virtual"><scope>CirShape</scope><name>CirShape</name></member>
+      <member refid="classCirShape_1a35e13b1332cf4c8365abf14c6db4efcd" prot="public" virt="non-virtual"><scope>CirShape</scope><name>CirShape</name></member>
+      <member refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" prot="public" virt="non-virtual"><scope>CirShape</scope><name>shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

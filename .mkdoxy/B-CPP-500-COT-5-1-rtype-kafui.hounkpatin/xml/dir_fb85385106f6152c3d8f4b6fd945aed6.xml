@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_fb85385106f6152c3d8f4b6fd945aed6" kind="dir">
+    <compoundname>src/Server/include</compoundname>
+    <innerfile refid="Client_8hpp">Client.hpp</innerfile>
+    <innerfile refid="Server_2include_2Coin__system_8hpp">Coin_system.hpp</innerfile>
+    <innerfile refid="Server_2include_2Collision__system_8hpp">Collision_system.hpp</innerfile>
+    <innerfile refid="Server_2include_2Entity_8hpp">Entity.hpp</innerfile>
+    <innerfile refid="Server_2include_2Health__system_8hpp">Health_system.hpp</innerfile>
+    <innerfile refid="Server_2include_2Mouvement__system_8hpp">Mouvement_system.hpp</innerfile>
+    <innerfile refid="protocol_8hpp">protocol.hpp</innerfile>
+    <innerfile refid="room__system_8hpp">room_system.hpp</innerfile>
+    <innerfile refid="Server_8hpp">Server.hpp</innerfile>
+    <innerfile refid="Server_2include_2Shoot__system_8hpp">Shoot_system.hpp</innerfile>
+    <innerfile refid="ThreadPool_8hpp">ThreadPool.hpp</innerfile>
+    <innerfile refid="Server_2include_2Time__manager_8hpp">Time_manager.hpp</innerfile>
+    <innerfile refid="Server_2include_2Vector_8hpp">Vector.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/"/>
+  </compounddef>
+</doxygen>

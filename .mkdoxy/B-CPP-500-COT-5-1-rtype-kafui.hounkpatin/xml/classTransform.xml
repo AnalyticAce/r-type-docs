@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTransform" kind="class" language="C++" prot="public">
+    <compoundname>Transform</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTransform_1aabf00419833a505cd8fbb4819e536659" prot="public" static="no" mutable="no">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Transform::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Transform::position</qualifiedname>
+        <initializer>= <ref refid="classVector2D" kindref="compound">Vector2D</ref>(0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="29" column="12" bodyfile="src/GameLogic/Entity.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransform_1a9b988a9e33847c8befd61ace68df16de" prot="public" static="no" mutable="no">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Transform::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <qualifiedname>Transform::velocity</qualifiedname>
+        <initializer>= <ref refid="classVector2D" kindref="compound">Vector2D</ref>(0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="30" column="12" bodyfile="src/GameLogic/Entity.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTransform_1aa08ca4266efabc768973cdeea51945ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <qualifiedname>Transform::Transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="31" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::Transform</definition>
+        <argsstring>(Vector2D pos, Vector2D vel)</argsstring>
+        <name>Transform</name>
+        <qualifiedname>Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+          <declname>vel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="32" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransform_1aa08ca4266efabc768973cdeea51945ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <qualifiedname>Transform::Transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="31" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Transform::Transform</definition>
+        <argsstring>(Vector2D pos, Vector2D vel)</argsstring>
+        <name>Transform</name>
+        <qualifiedname>Transform::Transform</qualifiedname>
+        <param>
+          <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+          <declname>vel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="32" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Transform</label>
+        <link refid="classTransform"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>position</edgelabel>
+          <edgelabel>velocity</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Vector2D</label>
+        <link refid="classVector2D"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/GameLogic/Entity.hpp" line="27" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classTransform_1aabf00419833a505cd8fbb4819e536659" prot="public" virt="non-virtual"><scope>Transform</scope><name>position</name></member>
+      <member refid="classTransform_1aa08ca4266efabc768973cdeea51945ab" prot="public" virt="non-virtual"><scope>Transform</scope><name>Transform</name></member>
+      <member refid="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" prot="public" virt="non-virtual"><scope>Transform</scope><name>Transform</name></member>
+      <member refid="classTransform_1aa08ca4266efabc768973cdeea51945ab" prot="public" virt="non-virtual"><scope>Transform</scope><name>Transform</name></member>
+      <member refid="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" prot="public" virt="non-virtual"><scope>Transform</scope><name>Transform</name></member>
+      <member refid="classTransform_1a9b988a9e33847c8befd61ace68df16de" prot="public" virt="non-virtual"><scope>Transform</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

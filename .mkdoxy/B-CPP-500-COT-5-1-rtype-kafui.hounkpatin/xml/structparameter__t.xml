@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structparameter__t" kind="struct" language="C++" prot="public">
+    <compoundname>parameter_t</compoundname>
+    <includes refid="Server_8hpp" local="no">Server.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structparameter__t_1a9b89fe8e984071d2295ba583b931af29" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parameter_t::argument</definition>
+        <argsstring></argsstring>
+        <name>argument</name>
+        <qualifiedname>parameter_t::argument</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="42" column="15" bodyfile="src/Server/include/Server.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameter__t_1a8c8edbf85b2138d9d408c97fc55312bd" prot="public" static="no" mutable="no">
+        <type>std::function&lt; bool(int *, char **)&gt;</type>
+        <definition>std::function&lt;bool(int *, char **)&gt; parameter_t::add_new_param</definition>
+        <argsstring></argsstring>
+        <name>add_new_param</name>
+        <qualifiedname>parameter_t::add_new_param</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="43" column="17" bodyfile="src/Server/include/Server.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameter__t_1a3a2cd536628ceb3685a809493bc74abc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parameter_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>parameter_t::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="44" column="15" bodyfile="src/Server/include/Server.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameter__t_1ad8d6c72f48ee9ad64ecaa4ff3f3d1163" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string parameter_t::usage</definition>
+        <argsstring></argsstring>
+        <name>usage</name>
+        <qualifiedname>parameter_t::usage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="45" column="15" bodyfile="src/Server/include/Server.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparameter__t_1ab07409ed6d3607fb5d3180cfb6849aea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int parameter_t::check_me</definition>
+        <argsstring></argsstring>
+        <name>check_me</name>
+        <qualifiedname>parameter_t::check_me</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="46" column="7" bodyfile="src/Server/include/Server.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/Server.hpp" line="41" column="1" bodyfile="src/Server/include/Server.hpp" bodystart="41" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structparameter__t_1a8c8edbf85b2138d9d408c97fc55312bd" prot="public" virt="non-virtual"><scope>parameter_t</scope><name>add_new_param</name></member>
+      <member refid="structparameter__t_1a9b89fe8e984071d2295ba583b931af29" prot="public" virt="non-virtual"><scope>parameter_t</scope><name>argument</name></member>
+      <member refid="structparameter__t_1ab07409ed6d3607fb5d3180cfb6849aea" prot="public" virt="non-virtual"><scope>parameter_t</scope><name>check_me</name></member>
+      <member refid="structparameter__t_1a3a2cd536628ceb3685a809493bc74abc" prot="public" virt="non-virtual"><scope>parameter_t</scope><name>name</name></member>
+      <member refid="structparameter__t_1ad8d6c72f48ee9ad64ecaa4ff3f3d1163" prot="public" virt="non-virtual"><scope>parameter_t</scope><name>usage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

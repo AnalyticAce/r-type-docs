@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="GameLogic_2Entity_8hpp" kind="file" language="C++">
+    <compoundname>Entity.hpp</compoundname>
+    <includes refid="GameLogic_2Vector_8hpp" local="yes">Vector.hpp</includes>
+    <includes local="no">SFML/Audio.hpp</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes local="no">SFML/Network.hpp</includes>
+    <includes local="no">SFML/System.hpp</includes>
+    <includes local="no">SFML/Window.hpp</includes>
+    <includes local="no">any</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">typeindex</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="GameLogic_2Coin__system_8hpp" local="yes">src/GameLogic/Coin_system.hpp</includedby>
+    <includedby refid="GameLogic_2Collision__system_8hpp" local="yes">src/GameLogic/Collision_system.hpp</includedby>
+    <includedby refid="GameLogic_2Entity_8cpp" local="yes">src/GameLogic/Entity.cpp</includedby>
+    <includedby refid="GameLogic_2Health__system_8hpp" local="yes">src/GameLogic/Health_system.hpp</includedby>
+    <includedby refid="GameLogic_2Mouvement__system_8hpp" local="yes">src/GameLogic/Mouvement_system.hpp</includedby>
+    <includedby refid="GameLogic_2Shoot__system_8hpp" local="yes">src/GameLogic/Shoot_system.hpp</includedby>
+    <includedby refid="GameLogic_2Time__manager_8hpp" local="yes">src/GameLogic/Time_manager.hpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/GameLogic/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/GameLogic/Entity.hpp</label>
+        <link refid="GameLogic_2Entity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Vector.hpp</label>
+        <link refid="GameLogic_2Vector_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="19">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="20">
+        <label>SFML/Network.hpp</label>
+      </node>
+      <node id="21">
+        <label>SFML/System.hpp</label>
+      </node>
+      <node id="22">
+        <label>SFML/Window.hpp</label>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="23">
+        <label>any</label>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="24">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>cctype</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>limits</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="25">
+        <label>mutex</label>
+      </node>
+      <node id="26">
+        <label>optional</label>
+      </node>
+      <node id="12">
+        <label>regex</label>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>stdexcept</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>tuple</label>
+      </node>
+      <node id="27">
+        <label>typeindex</label>
+      </node>
+      <node id="28">
+        <label>unordered_map</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/GameLogic/Coin_system.cpp</label>
+        <link refid="GameLogic_2Coin__system_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/GameLogic/Coin_system.hpp</label>
+        <link refid="GameLogic_2Coin__system_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/GameLogic/Collision_system.cpp</label>
+        <link refid="GameLogic_2Collision__system_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/GameLogic/Collision_system.hpp</label>
+        <link refid="GameLogic_2Collision__system_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/GameLogic/Entity.cpp</label>
+        <link refid="GameLogic_2Entity_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/GameLogic/Entity.hpp</label>
+        <link refid="GameLogic_2Entity_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/GameLogic/Health_system.cpp</label>
+        <link refid="GameLogic_2Health__system_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/GameLogic/Health_system.hpp</label>
+        <link refid="GameLogic_2Health__system_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/GameLogic/Mouvement_system.cpp</label>
+        <link refid="GameLogic_2Mouvement__system_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/GameLogic/Mouvement_system.hpp</label>
+        <link refid="GameLogic_2Mouvement__system_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/GameLogic/Shoot_system.cpp</label>
+        <link refid="GameLogic_2Shoot__system_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/GameLogic/Shoot_system.hpp</label>
+        <link refid="GameLogic_2Shoot__system_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/GameLogic/Time_manager.cpp</label>
+        <link refid="GameLogic_2Time__manager_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/GameLogic/Time_manager.hpp</label>
+        <link refid="GameLogic_2Time__manager_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/GameLogic/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTransform" prot="public">Transform</innerclass>
+    <innerclass refid="classCirShape" prot="public">CirShape</innerclass>
+    <innerclass refid="classRectShape" prot="public">RectShape</innerclass>
+    <innerclass refid="className" prot="public">Name</innerclass>
+    <innerclass refid="classBBox" prot="public">BBox</innerclass>
+    <innerclass refid="classInput" prot="public">Input</innerclass>
+    <innerclass refid="classHealth" prot="public">Health</innerclass>
+    <innerclass refid="classScore" prot="public">Score</innerclass>
+    <innerclass refid="classEntity" prot="public">Entity</innerclass>
+    <innerclass refid="classRegistry" prot="public">Registry</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" prot="public" static="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classEntity" kindref="compound">Entity</ref> &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::shared_ptr&lt;Entity&gt; &gt; EntityVector</definition>
+        <argsstring></argsstring>
+        <name>EntityVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="135" column="21" bodyfile="src/GameLogic/Entity.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="GameLogic_2Entity_8hpp_1a8ed9e0a745af30dbc2019425ca26772a" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, EntityVector&gt; EntityMap</definition>
+        <argsstring></argsstring>
+        <name>EntityMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="136" column="18" bodyfile="src/GameLogic/Entity.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2024</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>B-CPP-500-COT-5-1-bsrtype-kafui.hounkpatin</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Entity.hpp</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ENTITY_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENTITY_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Server_2include_2Vector_8hpp" kindref="compound">Vector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Audio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Network.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/System.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Window.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;any&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeindex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classTransform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTransform" kindref="compound">Transform</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="classTransform_1aabf00419833a505cd8fbb4819e536659" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/><ref refid="classTransform_1aabf00419833a505cd8fbb4819e536659" kindref="member">position</ref><sp/>=<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="30" refid="classTransform_1a9b988a9e33847c8befd61ace68df16de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/><ref refid="classTransform_1a9b988a9e33847c8befd61ace68df16de" kindref="member">velocity</ref><sp/>=<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="31" refid="classTransform_1aa08ca4266efabc768973cdeea51945ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classTransform_1aa08ca4266efabc768973cdeea51945ab" kindref="member">Transform</ref>(){};</highlight></codeline>
+<codeline lineno="32" refid="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classTransform_1a5a987c5faea2b86bbec1fb5721e0b06a" kindref="member">Transform</ref>(<ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/>pos,<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/>vel)<sp/>:<sp/><ref refid="classTransform_1aabf00419833a505cd8fbb4819e536659" kindref="member">position</ref>(pos),<sp/><ref refid="classTransform_1a9b988a9e33847c8befd61ace68df16de" kindref="member">velocity</ref>(vel){};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classCirShape" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCirShape" kindref="compound">CirShape</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" refkind="member"><highlight class="normal"><sp/><sp/>sf::CircleShape<sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classCirShape_1a3afa1b88f983d3ff6fe79dcc43dd5dc1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classCirShape_1a3afa1b88f983d3ff6fe79dcc43dd5dc1" kindref="member">CirShape</ref>(){};</highlight></codeline>
+<codeline lineno="39" refid="classCirShape_1a35e13b1332cf4c8365abf14c6db4efcd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classCirShape_1a35e13b1332cf4c8365abf14c6db4efcd" kindref="member">CirShape</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>point_count,<sp/>sf::Color<sp/>out_color,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Color<sp/>in_color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>thikness)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>.setRadius(radius);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>.setPointCount(point_count);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>.setOutlineColor(out_color);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>.setFillColor(in_color);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCirShape_1abb30f347dfd3ef575be7b5bc45bf30da" kindref="member">shape</ref>.setOutlineThickness(thikness);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classRectShape" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRectShape" kindref="compound">RectShape</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" refkind="member"><highlight class="normal"><sp/><sp/>sf::RectangleShape<sp/><ref refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" kindref="member">shape</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classRectShape_1af14c28d3a3236c8ef09f7aca83fc0c30" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classRectShape_1af14c28d3a3236c8ef09f7aca83fc0c30" kindref="member">RectShape</ref>(){};</highlight></codeline>
+<codeline lineno="53" refid="classRectShape_1abb084523ba5cb3e08677c0942eaca3da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classRectShape_1abb084523ba5cb3e08677c0942eaca3da" kindref="member">RectShape</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height,<sp/>sf::Color<sp/>out_color,<sp/>sf::Color<sp/>in_color,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>thikness)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" kindref="member">shape</ref>.setSize(sf::Vector2f(width,<sp/>height));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" kindref="member">shape</ref>.setOutlineColor(out_color);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" kindref="member">shape</ref>.setFillColor(in_color);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" kindref="member">shape</ref>.setOutlineThickness(thikness);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="className" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="className" kindref="compound">Name</ref><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64" refid="className_1a7421dc52d2db49203dbd27632b1fb946" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="className_1a7421dc52d2db49203dbd27632b1fb946" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="65" refid="className_1a12a92d46d52b216ccaa86e3cb1539e58" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="className_1a12a92d46d52b216ccaa86e3cb1539e58" kindref="member">Name</ref>(){};</highlight></codeline>
+<codeline lineno="66" refid="className_1aa1be79ac26ef3fc1e83ee550ad51dfb4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="className_1aa1be79ac26ef3fc1e83ee550ad51dfb4" kindref="member">Name</ref>(std::string<sp/>n)<sp/>:<sp/><ref refid="className_1a7421dc52d2db49203dbd27632b1fb946" kindref="member">name</ref>(n){};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classBBox" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBBox" kindref="compound">BBox</ref><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71" refid="classBBox_1a2e36f9a9d18200ba322d17dbe0e7b6b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/><ref refid="classBBox_1a2e36f9a9d18200ba322d17dbe0e7b6b3" kindref="member">size</ref><sp/>=<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="72" refid="classBBox_1ae26e694ee88779b928e8d3726f8213a1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBBox_1ae26e694ee88779b928e8d3726f8213a1" kindref="member">BBox</ref>(){};</highlight></codeline>
+<codeline lineno="73" refid="classBBox_1a49b9bc1151a50c8e44600314f6fbf68f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBBox_1a49b9bc1151a50c8e44600314f6fbf68f" kindref="member">BBox</ref>(<ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/>s)<sp/>:<sp/><ref refid="classBBox_1a2e36f9a9d18200ba322d17dbe0e7b6b3" kindref="member">size</ref>(s){};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classInput" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInput" kindref="compound">Input</ref><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78" refid="classInput_1a726284bbedf1b44c15c0bfe55c9752db" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInput_1a726284bbedf1b44c15c0bfe55c9752db" kindref="member">up</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79" refid="classInput_1a09b50da9cdd6e7998d3268bc080c87d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInput_1a09b50da9cdd6e7998d3268bc080c87d7" kindref="member">down</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80" refid="classInput_1a05fcbeeceb9603e642f34574306280bb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInput_1a05fcbeeceb9603e642f34574306280bb" kindref="member">left</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81" refid="classInput_1acda9f275c5e2bf1bc6d1a1511f46f746" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInput_1acda9f275c5e2bf1bc6d1a1511f46f746" kindref="member">right</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82" refid="classInput_1abc453d8d662da67b21b47ade889fc486" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInput_1abc453d8d662da67b21b47ade889fc486" kindref="member">shoot</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classInput_1a8bec96dd53baf5ec754c199af3c957c8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInput_1a8bec96dd53baf5ec754c199af3c957c8" kindref="member">reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInput_1a726284bbedf1b44c15c0bfe55c9752db" kindref="member">up</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInput_1a09b50da9cdd6e7998d3268bc080c87d7" kindref="member">down</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInput_1a05fcbeeceb9603e642f34574306280bb" kindref="member">left</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInput_1acda9f275c5e2bf1bc6d1a1511f46f746" kindref="member">right</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInput_1abc453d8d662da67b21b47ade889fc486" kindref="member">shoot</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classHealth" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHealth" kindref="compound">Health</ref><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95" refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" kindref="member">maxHealth</ref>;</highlight></codeline>
+<codeline lineno="96" refid="classHealth_1a69b81c68b97235eb125996df40d3c726" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classHealth_1a69b81c68b97235eb125996df40d3c726" kindref="member">currentHealth</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classHealth_1acd41f307cc9a942c3335480420c0ace7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classHealth_1acd41f307cc9a942c3335480420c0ace7" kindref="member">Health</ref>()<sp/>:<sp/><ref refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" kindref="member">maxHealth</ref>(0),<sp/><ref refid="classHealth_1a69b81c68b97235eb125996df40d3c726" kindref="member">currentHealth</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="99" refid="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" kindref="member">Health</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxHp)<sp/>:<sp/><ref refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" kindref="member">maxHealth</ref>(maxHp),<sp/><ref refid="classHealth_1a69b81c68b97235eb125996df40d3c726" kindref="member">currentHealth</ref>(maxHp)<sp/>{}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classHealth_1a63018f22213c76433bc103f0ef4550ad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHealth_1a63018f22213c76433bc103f0ef4550ad" kindref="member">takeDamage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHealth_1a69b81c68b97235eb125996df40d3c726" kindref="member">currentHealth</ref><sp/>=<sp/>std::max(0,<sp/><ref refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" kindref="member">maxHealth</ref><sp/>-<sp/>damage);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classScore" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classScore" kindref="compound">Score</ref><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scoreValue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111" refid="classScore_1a039c99843551e5e4b512ecee99e46617" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classScore_1a039c99843551e5e4b512ecee99e46617" kindref="member">Score</ref>()<sp/>:<sp/>scoreValue(0)<sp/>{}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" kindref="member">set_score</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_score)<sp/>{<sp/>scoreValue<sp/>=<sp/>new_score;<sp/>}</highlight></codeline>
+<codeline lineno="114" refid="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" kindref="member">getScore</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scoreValue;<sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classEntity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEntity" kindref="compound">Entity</ref><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="119" refid="classEntity_1a56c62246d60d421aaf7c3df9d89dfe45" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Transform&gt;<sp/><ref refid="classEntity_1a56c62246d60d421aaf7c3df9d89dfe45" kindref="member">transform</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classEntity_1ada909753975a70eb77031c550cf2a5b3" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;CirShape&gt;<sp/><ref refid="classEntity_1ada909753975a70eb77031c550cf2a5b3" kindref="member">cirshape</ref>;</highlight></codeline>
+<codeline lineno="121" refid="classEntity_1aee9369096fd94780a3a6ad771e9381b0" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;RectShape&gt;<sp/><ref refid="classEntity_1aee9369096fd94780a3a6ad771e9381b0" kindref="member">rectshape</ref>;</highlight></codeline>
+<codeline lineno="122" refid="classEntity_1a3b427e344b129284bd4c877c0d9f5468" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Name&gt;<sp/><ref refid="classEntity_1a3b427e344b129284bd4c877c0d9f5468" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="123" refid="classEntity_1a27d30d5f06ae96a4c9a0a26853baa0b6" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;BBox&gt;<sp/><ref refid="classEntity_1a27d30d5f06ae96a4c9a0a26853baa0b6" kindref="member">bbox</ref>;</highlight></codeline>
+<codeline lineno="124" refid="classEntity_1ac1c7b0218618f4f328c1eeb5e1d6221d" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Input&gt;<sp/><ref refid="classEntity_1ac1c7b0218618f4f328c1eeb5e1d6221d" kindref="member">input</ref>;</highlight></codeline>
+<codeline lineno="125" refid="classEntity_1a89e51058df3e4c752e21845a53cf7bbc" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Health&gt;<sp/><ref refid="classEntity_1a89e51058df3e4c752e21845a53cf7bbc" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="126" refid="classEntity_1abafed07040855c588115db62bea69853" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;Score&gt;<sp/><ref refid="classEntity_1abafed07040855c588115db62bea69853" kindref="member">score</ref>;</highlight></codeline>
+<codeline lineno="127" refid="classEntity_1a980f368aa07ce358583982821533a54a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classEntity_1a980f368aa07ce358583982821533a54a" kindref="member">Entity</ref>(){};</highlight></codeline>
+<codeline lineno="128" refid="classEntity_1a46519792e94e2cbe80c8196e8f3b50e4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classEntity_1a46519792e94e2cbe80c8196e8f3b50e4" kindref="member">Entity</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>std::string<sp/>tag)<sp/>:<sp/><ref refid="classEntity_1a4f10bbb958a8887eaceff523794fdf52" kindref="member">_id</ref>(id),<sp/><ref refid="classEntity_1aeaacddb6325d69c35b0239d9a5dc3f25" kindref="member">_tag</ref>(tag){};</highlight></codeline>
+<codeline lineno="129" refid="classEntity_1a4f10bbb958a8887eaceff523794fdf52" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classEntity_1a4f10bbb958a8887eaceff523794fdf52" kindref="member">_id</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="130" refid="classEntity_1aeaacddb6325d69c35b0239d9a5dc3f25" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classEntity_1aeaacddb6325d69c35b0239d9a5dc3f25" kindref="member">_tag</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Default&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131" refid="classEntity_1a691dbe5f9ec930c27af2af0b97907a9e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEntity_1a691dbe5f9ec930c27af2af0b97907a9e" kindref="member">destroy</ref>()<sp/>{<sp/><ref refid="classEntity_1a5f7e1b098fc01a296bc2c3caebffebe8" kindref="member">_alive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="132" refid="classEntity_1a5f7e1b098fc01a296bc2c3caebffebe8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEntity_1a5f7e1b098fc01a296bc2c3caebffebe8" kindref="member">_alive</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::shared_ptr&lt;Entity&gt;&gt;<sp/><ref refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref>;</highlight></codeline>
+<codeline lineno="136" refid="GameLogic_2Entity_8hpp_1a8ed9e0a745af30dbc2019425ca26772a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>EntityVector&gt;<sp/><ref refid="GameLogic_2Entity_8hpp_1a8ed9e0a745af30dbc2019425ca26772a" kindref="member">EntityMap</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="classRegistry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRegistry" kindref="compound">Registry</ref><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="Server_2include_2Entity_8hpp_1a8ed9e0a745af30dbc2019425ca26772a" kindref="member">EntityMap</ref><sp/>_entities_map;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref><sp/>_entities_vector;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref><sp/>_new_entities;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_entities_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146" refid="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" kindref="member">Registry</ref>(){};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistry_1afbffaf13d8ec75c202d42dec47d21a2f" kindref="member">entity_update</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Entity&gt;<sp/><ref refid="classRegistry_1a175e1136557c0a34e380ae1e31913445" kindref="member">add_entity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>tag);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><ref refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref><sp/>&amp;<ref refid="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" kindref="member">get_entities</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>tag);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><ref refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref><sp/>&amp;<ref refid="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" kindref="member">get_entities</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistry_1a34fd387f24d7d8cfa2bc923134acc38e" kindref="member">spawn_enemy</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistry_1abd72bee0e1a04c1996743dbfbb9a31b0" kindref="member">spawn_coin</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistry_1aae7e3c1a5a7cc768a9fee6b92930bf21" kindref="member">spawn_player</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="154" refid="classRegistry_1a6d530523aae13c6b709e314033d126f7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRegistry_1a6d530523aae13c6b709e314033d126f7" kindref="member">remove_entity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!ENTITY_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="src/GameLogic/Entity.hpp"/>
+  </compounddef>
+</doxygen>

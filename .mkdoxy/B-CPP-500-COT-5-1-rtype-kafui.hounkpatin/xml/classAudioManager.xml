@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classAudioManager" kind="class" language="C++" prot="public">
+    <compoundname>AudioManager</compoundname>
+    <includes refid="AudioManager_8hpp" local="no">AudioManager.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAudioManager_1aed1ac4d1f6c15f2bb647ea768ff2baa2" prot="private" static="no" mutable="no">
+        <type>sf::SoundBuffer</type>
+        <definition>sf::SoundBuffer AudioManager::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>AudioManager::buffer</qualifiedname>
+        <briefdescription>
+<para>Buffer for storing sound effect data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sf::SoundBuffer object holds the raw audio data for short sound effects, which can then be played by the sf::Sound object.</para>
+<para><simplesect kind="note"><para>This buffer is required to load sound effects before they can be played. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="35" column="19" bodyfile="include/Engine/Audio/AudioManager.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAudioManager_1adea465bd83f8d58ae183018d55a5e088" prot="private" static="no" mutable="no">
+        <type>sf::Sound</type>
+        <definition>sf::Sound AudioManager::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <qualifiedname>AudioManager::sound</qualifiedname>
+        <briefdescription>
+<para>Sound object for playing short sound effects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sf::Sound object manages the playback of sound effects stored in the buffer. This is ideal for short, repeated sounds such as notifications or in-game effects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="44" column="13" bodyfile="include/Engine/Audio/AudioManager.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAudioManager_1a259c79c2c00a8ec8eb796ba98e92e371" prot="private" static="no" mutable="no">
+        <type>sf::Music</type>
+        <definition>sf::Music AudioManager::music</definition>
+        <argsstring></argsstring>
+        <name>music</name>
+        <qualifiedname>AudioManager::music</qualifiedname>
+        <briefdescription>
+<para>Music object for streaming and playing longer music tracks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The sf::Music object handles streaming of larger audio files, such as background music or longer soundtracks. It plays audio from files directly, rather than loading the entire file into memory.</para>
+<para><simplesect kind="note"><para>Music is streamed to reduce memory usage and support larger files. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="55" column="13" bodyfile="include/Engine/Audio/AudioManager.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAudioManager_1ae59d8605c1d706e7bab47d4e8f900d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AudioManager::AudioManager</definition>
+        <argsstring>()</argsstring>
+        <name>AudioManager</name>
+        <qualifiedname>AudioManager::AudioManager</qualifiedname>
+        <briefdescription>
+<para>Constructs an <ref refid="classAudioManager" kindref="compound">AudioManager</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the <ref refid="classAudioManager" kindref="compound">AudioManager</ref> for managing sound and music playback. In a full singleton implementation, this constructor should be private, and a static method would control instance creation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="65" column="3" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1ad94dc46723c6d7cf8c81fc3772a842aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AudioManager::~AudioManager</definition>
+        <argsstring>()</argsstring>
+        <name>~AudioManager</name>
+        <qualifiedname>AudioManager::~AudioManager</qualifiedname>
+        <briefdescription>
+<para>Destructs the <ref refid="classAudioManager" kindref="compound">AudioManager</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans up and releases any audio resources associated with sound or music playback, ensuring proper resource deallocation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="73" column="3" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a5898a96d728b22d43b5402d762afe780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::playSound</definition>
+        <argsstring>(const std::string &amp;Path)</argsstring>
+        <name>playSound</name>
+        <qualifiedname>AudioManager::playSound</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Path</declname>
+        </param>
+        <briefdescription>
+<para>Plays a sound effect from a specified file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads a sound from the provided file path into the buffer and immediately plays it using the sf::Sound object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string representing the file path of the sound effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the sound file cannot be loaded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Ensure the sound file is in a supported format (e.g., WAV, OGG, MP3). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="86" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a059afbef32e932b47870e1afd304096e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::playMusic</definition>
+        <argsstring>(const std::string &amp;Path)</argsstring>
+        <name>playMusic</name>
+        <qualifiedname>AudioManager::playMusic</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Path</declname>
+        </param>
+        <briefdescription>
+<para>Plays a music track from a specified file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads and streams music from the given file path, starting playback once the music file is successfully opened. Music files should be larger audio tracks intended for extended playback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string representing the file path of the music track. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the music file cannot be opened.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Supported music formats include OGG, FLAC, MP3 and WAV. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="100" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a8afd8f3db6787f87aa55436d6c9dadf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::pauseMusic</definition>
+        <argsstring>()</argsstring>
+        <name>pauseMusic</name>
+        <qualifiedname>AudioManager::pauseMusic</qualifiedname>
+        <briefdescription>
+<para>Pauses the currently playing music. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Temporarily halts music playback, preserving the current position. This allows the music to be resumed from the same point using <ref refid="classAudioManager_1a213a73d801ac409765010ba6d7a8f4f3" kindref="member">resumeMusic()</ref>.</para>
+<para><simplesect kind="note"><para>This function only affects music playback and not sound effects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="111" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a213a73d801ac409765010ba6d7a8f4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::resumeMusic</definition>
+        <argsstring>()</argsstring>
+        <name>resumeMusic</name>
+        <qualifiedname>AudioManager::resumeMusic</qualifiedname>
+        <briefdescription>
+<para>Resumes music playback from the paused position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Continues playing the previously paused music from the exact position it was paused.</para>
+<para><simplesect kind="note"><para>Music must have been paused using <ref refid="classAudioManager_1a8afd8f3db6787f87aa55436d6c9dadf1" kindref="member">pauseMusic()</ref> for this method to work. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="122" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a7930c4ff2c7957efc52d5f0b3501058e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::setMusicVolume</definition>
+        <argsstring>(float volume=100)</argsstring>
+        <name>setMusicVolume</name>
+        <qualifiedname>AudioManager::setMusicVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+<para>Sets the volume level for music playback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjusts the volume for the music being played. The volume is a floating-point value between 0 (mute) and 100 (full volume).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A float representing the desired volume level (default is 100).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function only affects the music volume, not sound effects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="135" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a4b3a8535788e45cd7769506e9b73eaf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::setSoundVolume</definition>
+        <argsstring>(float volume=100)</argsstring>
+        <name>setSoundVolume</name>
+        <qualifiedname>AudioManager::setSoundVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+<para>Sets the volume level for sound effects playback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjusts the volume of the sound effects being played. The volume is a floating-point value between 0 (mute) and 100 (full volume).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A float representing the desired volume level (default is 100).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function only affects sound effects volume, not music. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="148" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classAudioManager_1a46482982a6963eaafba8cf38553ff669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioManager::setPitch</definition>
+        <argsstring>(float pitch=1.0)</argsstring>
+        <name>setPitch</name>
+        <qualifiedname>AudioManager::setPitch</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Adjusts the pitch of the sound effect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the pitch for the sound effect currently loaded into the sf::Sound object. The pitch determines how high or low the sound is played, with a value of 1.0 being the normal pitch.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A float representing the desired pitch level (default is 1.0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function only affects sound effects, not music. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Audio/AudioManager.hpp" line="161" column="8" bodyfile="src/Engine/Audio/AudioManager.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handles sound and music playback using the SFML audio library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classAudioManager" kindref="compound">AudioManager</ref> class provides a comprehensive interface for managing and controlling audio playback in an application. It supports both short sound effects via sf::Sound and longer music tracks via sf::Music, offering functionality for loading, playing, pausing, resuming, and adjusting audio properties such as volume and pitch.</para>
+<para>This class is implemented as a singleton to ensure centralized audio management and prevent multiple instances from causing resource conflicts or duplicate sound playback.</para>
+<para><simplesect kind="note"><para><ref refid="classAudioManager" kindref="compound">AudioManager</ref> assumes the audio resources are properly initialized, and the paths provided are valid audio file formats supported by SFML. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/Engine/Audio/AudioManager.hpp" line="24" column="1" bodyfile="include/Engine/Audio/AudioManager.hpp" bodystart="24" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classAudioManager_1ae59d8605c1d706e7bab47d4e8f900d09" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>AudioManager</name></member>
+      <member refid="classAudioManager_1aed1ac4d1f6c15f2bb647ea768ff2baa2" prot="private" virt="non-virtual"><scope>AudioManager</scope><name>buffer</name></member>
+      <member refid="classAudioManager_1a259c79c2c00a8ec8eb796ba98e92e371" prot="private" virt="non-virtual"><scope>AudioManager</scope><name>music</name></member>
+      <member refid="classAudioManager_1a8afd8f3db6787f87aa55436d6c9dadf1" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>pauseMusic</name></member>
+      <member refid="classAudioManager_1a059afbef32e932b47870e1afd304096e" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>playMusic</name></member>
+      <member refid="classAudioManager_1a5898a96d728b22d43b5402d762afe780" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>playSound</name></member>
+      <member refid="classAudioManager_1a213a73d801ac409765010ba6d7a8f4f3" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>resumeMusic</name></member>
+      <member refid="classAudioManager_1a7930c4ff2c7957efc52d5f0b3501058e" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>setMusicVolume</name></member>
+      <member refid="classAudioManager_1a46482982a6963eaafba8cf38553ff669" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>setPitch</name></member>
+      <member refid="classAudioManager_1a4b3a8535788e45cd7769506e9b73eaf8" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>setSoundVolume</name></member>
+      <member refid="classAudioManager_1adea465bd83f8d58ae183018d55a5e088" prot="private" virt="non-virtual"><scope>AudioManager</scope><name>sound</name></member>
+      <member refid="classAudioManager_1ad94dc46723c6d7cf8c81fc3772a842aa" prot="public" virt="non-virtual"><scope>AudioManager</scope><name>~AudioManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceprotocol" kind="namespace" language="C++">
+    <compoundname>protocol</compoundname>
+    <innerclass refid="structprotocol_1_1EventNotification" prot="public">protocol::EventNotification</innerclass>
+    <innerclass refid="structprotocol_1_1GameStateUpdate" prot="public">protocol::GameStateUpdate</innerclass>
+    <innerclass refid="structprotocol_1_1PlayerAction" prot="public">protocol::PlayerAction</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceprotocol_1acba7c12e798707c279be046af388160a" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>MessageType</name>
+        <qualifiedname>protocol::MessageType</qualifiedname>
+        <enumvalue id="namespaceprotocol_1acba7c12e798707c279be046af388160aa9a04e4dc917730450e3d929af463f5fc" prot="public">
+          <name>PLAYER_ACTION</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceprotocol_1acba7c12e798707c279be046af388160aac3611892a55274e9c08b1780830964f2" prot="public">
+          <name>GAME_STATE_UPDATE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceprotocol_1acba7c12e798707c279be046af388160aa89d6265e6bfdcf6163ae9687db619069" prot="public">
+          <name>EVENT_NOTIFICATION</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/protocol.hpp" line="17" column="1" bodyfile="src/Server/include/protocol.hpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceprotocol_1a2236785fbd38c1a3470c4009366ac666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; protocol::serialize</definition>
+        <argsstring>(const PlayerAction &amp;msg)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>protocol::serialize</qualifiedname>
+        <param>
+          <type>const <ref refid="structprotocol_1_1PlayerAction" kindref="compound">PlayerAction</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="12" column="13" bodyfile="src/Server/src/protocol.cpp" bodystart="12" bodyend="21" declfile="src/Server/include/protocol.hpp" declline="38" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprotocol_1aa3b51f3c098bf537cbcf71fa089e9f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; protocol::serialize</definition>
+        <argsstring>(const GameStateUpdate &amp;msg)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>protocol::serialize</qualifiedname>
+        <param>
+          <type>const <ref refid="structprotocol_1_1GameStateUpdate" kindref="compound">GameStateUpdate</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="23" column="13" bodyfile="src/Server/src/protocol.cpp" bodystart="23" bodyend="28" declfile="src/Server/include/protocol.hpp" declline="39" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprotocol_1a4fcabce36e2270cfaf417f84ce093883" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; protocol::serialize</definition>
+        <argsstring>(const EventNotification &amp;msg)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>protocol::serialize</qualifiedname>
+        <param>
+          <type>const <ref refid="structprotocol_1_1EventNotification" kindref="compound">EventNotification</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="30" column="13" bodyfile="src/Server/src/protocol.cpp" bodystart="30" bodyend="36" declfile="src/Server/include/protocol.hpp" declline="40" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprotocol_1aac053bdb9ae7c2e6ed0c481eaff3adac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool protocol::deserialize</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;buffer, PlayerAction &amp;msg)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>protocol::deserialize</qualifiedname>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structprotocol_1_1PlayerAction" kindref="compound">PlayerAction</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="38" column="6" bodyfile="src/Server/src/protocol.cpp" bodystart="38" bodyend="49" declfile="src/Server/include/protocol.hpp" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprotocol_1aa8e16e0426445e066d4db30b25751dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool protocol::deserialize</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;buffer, GameStateUpdate &amp;msg)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>protocol::deserialize</qualifiedname>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structprotocol_1_1GameStateUpdate" kindref="compound">GameStateUpdate</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="51" column="6" bodyfile="src/Server/src/protocol.cpp" bodystart="51" bodyend="58" declfile="src/Server/include/protocol.hpp" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprotocol_1adbe25ec5a7de69138a517fe2ffcb73c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool protocol::deserialize</definition>
+        <argsstring>(const std::vector&lt; uint8_t &gt; &amp;buffer, EventNotification &amp;msg)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>protocol::deserialize</qualifiedname>
+        <param>
+          <type>const std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structprotocol_1_1EventNotification" kindref="compound">EventNotification</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/src/protocol.cpp" line="60" column="6" bodyfile="src/Server/src/protocol.cpp" bodystart="60" bodyend="69" declfile="src/Server/include/protocol.hpp" declline="44" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/protocol.hpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

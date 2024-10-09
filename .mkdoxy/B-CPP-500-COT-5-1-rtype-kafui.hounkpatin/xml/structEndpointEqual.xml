@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structEndpointEqual" kind="struct" language="C++" prot="public">
+    <compoundname>EndpointEqual</compoundname>
+    <includes refid="Server_8hpp" local="no">Server.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structEndpointEqual_1abd989c9793c0a4f824cc4b6d32273412" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EndpointEqual::operator()</definition>
+        <argsstring>(const boost::asio::ip::udp::endpoint &amp;lhs, const boost::asio::ip::udp::endpoint &amp;rhs) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>EndpointEqual::operator()</qualifiedname>
+        <param>
+          <type>const boost::asio::ip::udp::endpoint &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const boost::asio::ip::udp::endpoint &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Server.hpp" line="57" column="8" bodyfile="src/Server/include/Server.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/Server.hpp" line="56" column="1" bodyfile="src/Server/include/Server.hpp" bodystart="56" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structEndpointEqual_1abd989c9793c0a4f824cc4b6d32273412" prot="public" virt="non-virtual"><scope>EndpointEqual</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

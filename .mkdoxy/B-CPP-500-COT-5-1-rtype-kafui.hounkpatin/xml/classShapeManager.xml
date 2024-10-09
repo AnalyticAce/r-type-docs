@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classShapeManager" kind="class" language="C++" prot="public">
+    <compoundname>ShapeManager</compoundname>
+    <includes refid="ShapeManager_8hpp" local="no">ShapeManager.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShapeManager_1a0935111f69d26fc291e54eb20f7f99af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ShapeManager::ShapeManager</definition>
+        <argsstring>()</argsstring>
+        <name>ShapeManager</name>
+        <qualifiedname>ShapeManager::ShapeManager</qualifiedname>
+        <briefdescription>
+<para>Constructs the <ref refid="classShapeManager" kindref="compound">ShapeManager</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the <ref refid="classShapeManager" kindref="compound">ShapeManager</ref> responsible for handling the rendering of shapes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Shape/ShapeManager.hpp" line="31" column="3" bodyfile="src/Engine/Shape/ShapeManager.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classShapeManager_1ace169fc40f785693ec0bde3693db11d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ShapeManager::~ShapeManager</definition>
+        <argsstring>()</argsstring>
+        <name>~ShapeManager</name>
+        <qualifiedname>ShapeManager::~ShapeManager</qualifiedname>
+        <briefdescription>
+<para>Destroys the <ref refid="classShapeManager" kindref="compound">ShapeManager</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleans up any resources held by the <ref refid="classShapeManager" kindref="compound">ShapeManager</ref> before the instance is destroyed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Shape/ShapeManager.hpp" line="39" column="3" bodyfile="src/Engine/Shape/ShapeManager.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classShapeManager_1a5f4b788e925d86a23000e413c68ee0bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShapeManager::drawRectangle</definition>
+        <argsstring>(sf::RenderWindow &amp;window, float x, float y, float width, float height, const sf::Color &amp;color, float thickness)</argsstring>
+        <name>drawRectangle</name>
+        <qualifiedname>ShapeManager::drawRectangle</qualifiedname>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const sf::Color &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <briefdescription>
+<para>Renders a rectangle onto the provided SFML RenderWindow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method draws a rectangle at the specified position (x, y) with given dimensions (width, height) and a specified color and border thickness.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the SFML RenderWindow where the shape will be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal position of the rectangle&apos;s top-left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical position of the rectangle&apos;s top-left corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color of the rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>thickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thickness of the rectangle&apos;s border (outline).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The render window must be open and available before calling this function. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Shape/ShapeManager.hpp" line="60" column="8" bodyfile="src/Engine/Shape/ShapeManager.cpp" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classShapeManager_1acb5bb015f008345356bd0c7b07e3571a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShapeManager::drawCircle</definition>
+        <argsstring>(sf::RenderWindow &amp;window, float x, float y, float radius, const sf::Color &amp;color, float thickness)</argsstring>
+        <name>drawCircle</name>
+        <qualifiedname>ShapeManager::drawCircle</qualifiedname>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>const sf::Color &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <briefdescription>
+<para>Renders a circle onto the provided SFML RenderWindow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method draws a circle centered at the specified position (x, y) with the given radius, color, and border thickness.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the SFML RenderWindow where the shape will be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal position of the circle&apos;s center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical position of the circle&apos;s center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the circle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color of the circle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>thickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thickness of the circle&apos;s border (outline).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The render window must be open and available before calling this function. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Shape/ShapeManager.hpp" line="80" column="8" bodyfile="src/Engine/Shape/ShapeManager.cpp" bodystart="17" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Manages and renders geometric shapes using the SFML graphics library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classShapeManager" kindref="compound">ShapeManager</ref> class encapsulates the functionality for drawing various geometric shapes (rectangles, circles, etc.) onto a given SFML render window.</para>
+<para>This class is designed as a singleton, ensuring that only one instance manages all shape-rendering operations within the application. It provides an interface for creating and configuring shapes with specific properties such as position, dimensions, color, and border thickness.</para>
+<para><simplesect kind="note"><para>This class is a non-copyable singleton, and it assumes that the SFML RenderWindow is properly initialized before invoking any shape drawing operations. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/Engine/Shape/ShapeManager.hpp" line="23" column="1" bodyfile="include/Engine/Shape/ShapeManager.hpp" bodystart="23" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classShapeManager_1acb5bb015f008345356bd0c7b07e3571a" prot="public" virt="non-virtual"><scope>ShapeManager</scope><name>drawCircle</name></member>
+      <member refid="classShapeManager_1a5f4b788e925d86a23000e413c68ee0bd" prot="public" virt="non-virtual"><scope>ShapeManager</scope><name>drawRectangle</name></member>
+      <member refid="classShapeManager_1a0935111f69d26fc291e54eb20f7f99af" prot="public" virt="non-virtual"><scope>ShapeManager</scope><name>ShapeManager</name></member>
+      <member refid="classShapeManager_1ace169fc40f785693ec0bde3693db11d0" prot="public" virt="non-virtual"><scope>ShapeManager</scope><name>~ShapeManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

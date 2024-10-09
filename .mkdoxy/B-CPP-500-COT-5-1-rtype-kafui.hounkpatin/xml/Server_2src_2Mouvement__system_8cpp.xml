@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Server_2src_2Mouvement__system_8cpp" kind="file" language="C++">
+    <compoundname>Mouvement_system.cpp</compoundname>
+    <includes refid="Server_2include_2Mouvement__system_8hpp" local="yes">../include/Mouvement_system.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Entity.hpp</label>
+        <link refid="Server_2include_2Entity_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../include/Mouvement_system.hpp</label>
+        <link refid="Server_2include_2Mouvement__system_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Vector.hpp</label>
+        <link refid="Server_2include_2Vector_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Server/src/Mouvement_system.cpp</label>
+        <link refid="Server_2src_2Mouvement__system_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="20">
+        <label>any</label>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="21">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>cctype</label>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>limits</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="22">
+        <label>mutex</label>
+      </node>
+      <node id="23">
+        <label>optional</label>
+      </node>
+      <node id="14">
+        <label>regex</label>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="16">
+        <label>stdexcept</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>tuple</label>
+      </node>
+      <node id="24">
+        <label>typeindex</label>
+      </node>
+      <node id="25">
+        <label>unordered_map</label>
+      </node>
+      <node id="19">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2024</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>game_logic</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Mouvement_system.cpp</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/Mouvement_system.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMouvementSystem_1a72cd1f698e545225855b22caf6a9b6aa" kindref="member">MouvementSystem::handleInput</ref>(<ref refid="classRegistry" kindref="compound">Registry</ref><sp/>&amp;registry,<sp/>std::string<sp/>move_direction,<sp/>std::string<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;players<sp/>=<sp/>registry.<ref refid="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" kindref="member">get_entities</ref>(</highlight><highlight class="stringliteral">&quot;Player&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(players.empty())</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;player<sp/>:<sp/>players)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>player-&gt;input-&gt;reset();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!player-&gt;transform<sp/>||<sp/>!player-&gt;bbox)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;input<sp/>=<sp/>player-&gt;input;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;name-&gt;name<sp/>==<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(move_direction<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;keyup&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input-&gt;up<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(move_direction<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;keydown&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input-&gt;down<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(move_direction<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;keyleft&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input-&gt;left<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(move_direction<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;keyright&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input-&gt;right<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(move_direction<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;shoot&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input-&gt;shoot<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/><ref refid="classMouvementSystem_1a3a0d1de66cea77a8f19925efbf98ef80" kindref="member">MouvementSystem::move_player</ref>(<ref refid="classRegistry" kindref="compound">Registry</ref><sp/>&amp;registry,<sp/>std::string<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;players<sp/>=<sp/>registry.<ref refid="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" kindref="member">get_entities</ref>(</highlight><highlight class="stringliteral">&quot;Player&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(players.empty())</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;player<sp/>:<sp/>players)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!player-&gt;transform<sp/>||<sp/>!player-&gt;bbox)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;name-&gt;name<sp/>==<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;transform-&gt;velocity<sp/>=<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;input-&gt;up)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;transform-&gt;velocity.y<sp/>=<sp/>-2;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;input-&gt;down)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;transform-&gt;velocity.y<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;input-&gt;left)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;transform-&gt;velocity.x<sp/>=<sp/>-2;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(player-&gt;input-&gt;right)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;transform-&gt;velocity.x<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/>newPosition<sp/>=<sp/>player-&gt;transform-&gt;position<sp/>-<sp/>player-&gt;transform-&gt;velocity;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newPosition.<ref refid="classVector2D_1ac5c4e553815737aa24bec8281270178f" kindref="member">x</ref><sp/>&lt;<sp/>0)<sp/>newPosition.<ref refid="classVector2D_1ac5c4e553815737aa24bec8281270178f" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newPosition.<ref refid="classVector2D_1ac38d0179cfe74c30fee290a703ab209a" kindref="member">y</ref><sp/>&lt;<sp/>0)<sp/>newPosition.<ref refid="classVector2D_1ac38d0179cfe74c30fee290a703ab209a" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newPosition;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMouvementSystem_1ad907e382ce8d5c8c950e48b29a705b16" kindref="member">MouvementSystem::system_movement</ref>(<ref refid="GameLogic_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref><sp/>&amp;entities)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;entity<sp/>:<sp/>entities)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(entity-&gt;transform)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>entity-&gt;transform-&gt;position<sp/>=</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entity-&gt;transform-&gt;position<sp/>+<sp/>entity-&gt;transform-&gt;velocity;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(entity-&gt;transform-&gt;position.x<sp/>&lt;<sp/>0)<sp/>entity-&gt;transform-&gt;position.<ref refid="classVector2D_1ac5c4e553815737aa24bec8281270178f" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(entity-&gt;transform-&gt;position.y<sp/>&lt;<sp/>0)<sp/>entity-&gt;transform-&gt;position.y<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><ref refid="classVector2D" kindref="compound">Vector2D</ref><sp/><ref refid="classMouvementSystem_1a885498c5b4c0724618553cdd50d4c58f" kindref="member">MouvementSystem::enemy_move</ref>(<ref refid="classRegistry" kindref="compound">Registry</ref><sp/>&amp;registry)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>enemies<sp/>=<sp/>registry.<ref refid="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" kindref="member">get_entities</ref>(</highlight><highlight class="stringliteral">&quot;Enemy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>enemy<sp/>:<sp/>enemies){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>enemy-&gt;transform-&gt;velocity<sp/>=<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>enemy-&gt;transform-&gt;velocity.x<sp/>=<sp/>-5;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(enemy-&gt;transform-&gt;position<sp/>-<sp/>enemy-&gt;transform-&gt;velocity);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Server/src/Mouvement_system.cpp"/>
+  </compounddef>
+</doxygen>

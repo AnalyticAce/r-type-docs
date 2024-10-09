@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4681a19507fe33ded8545b89b782904d" kind="dir">
+    <compoundname>src/Engine/Window</compoundname>
+    <innerfile refid="WindowManager_8cpp">WindowManager.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Engine/Window/"/>
+  </compounddef>
+</doxygen>

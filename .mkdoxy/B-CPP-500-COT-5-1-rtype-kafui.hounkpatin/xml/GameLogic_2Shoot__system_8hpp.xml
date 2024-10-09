@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="GameLogic_2Shoot__system_8hpp" kind="file" language="C++">
+    <compoundname>Shoot_system.hpp</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="yes">Entity.hpp</includes>
+    <includedby refid="GameLogic_2Shoot__system_8cpp" local="yes">src/GameLogic/Shoot_system.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/GameLogic/main.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Entity.hpp</label>
+        <link refid="GameLogic_2Entity_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/GameLogic/Shoot_system.hpp</label>
+        <link refid="GameLogic_2Shoot__system_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Vector.hpp</label>
+        <link refid="GameLogic_2Vector_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="20">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="21">
+        <label>SFML/Network.hpp</label>
+      </node>
+      <node id="22">
+        <label>SFML/System.hpp</label>
+      </node>
+      <node id="23">
+        <label>SFML/Window.hpp</label>
+      </node>
+      <node id="4">
+        <label>algorithm</label>
+      </node>
+      <node id="24">
+        <label>any</label>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="25">
+        <label>cassert</label>
+      </node>
+      <node id="6">
+        <label>cctype</label>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>limits</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="26">
+        <label>mutex</label>
+      </node>
+      <node id="27">
+        <label>optional</label>
+      </node>
+      <node id="13">
+        <label>regex</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="15">
+        <label>stdexcept</label>
+      </node>
+      <node id="16">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>tuple</label>
+      </node>
+      <node id="28">
+        <label>typeindex</label>
+      </node>
+      <node id="29">
+        <label>unordered_map</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/GameLogic/Shoot_system.cpp</label>
+        <link refid="GameLogic_2Shoot__system_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/GameLogic/Shoot_system.hpp</label>
+        <link refid="GameLogic_2Shoot__system_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/GameLogic/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classShootSystem" prot="public">ShootSystem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2024</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>game_logic</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Shoot_system.hpp</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHOOT_SYSTEM_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHOOT_SYSTEM_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Server_2include_2Entity_8hpp" kindref="compound">Entity.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRegistry" kindref="compound">Registry</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classShootSystem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classShootSystem" kindref="compound">ShootSystem</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classShootSystem_1a669530d36401e1f2ad9a90a382773002" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classShootSystem_1a669530d36401e1f2ad9a90a382773002" kindref="member">spawn_projectile</ref>(<ref refid="classRegistry" kindref="compound">Registry</ref><sp/>&amp;registry,<sp/><ref refid="classEntity" kindref="compound">Entity</ref><sp/>&amp;player)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(player.input-&gt;shoot<sp/>==<sp/>true)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>proj<sp/>=<sp/>registry.<ref refid="classRegistry_1a175e1136557c0a34e380ae1e31913445" kindref="member">add_entity</ref>(</highlight><highlight class="stringliteral">&quot;Projectile&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proj-&gt;transform<sp/>=</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_unique&lt;Transform&gt;(<ref refid="classVector2D" kindref="compound">Vector2D</ref>(200,<sp/>200),<sp/><ref refid="classVector2D" kindref="compound">Vector2D</ref>(0.05f,<sp/>0));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proj-&gt;cirshape<sp/>=<sp/>std::make_unique&lt;CirShape&gt;(5,<sp/>30,<sp/>sf::Color::Red,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Color::Yellow,<sp/>2);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proj-&gt;bbox<sp/>=<sp/>std::make_unique&lt;BBox&gt;(<ref refid="classVector2D" kindref="compound">Vector2D</ref>(10,<sp/>10));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proj-&gt;transform-&gt;position.y<sp/>=</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="classEntity_1a56c62246d60d421aaf7c3df9d89dfe45" kindref="member">transform</ref>-&gt;position.y<sp/>+<sp/>(player.<ref refid="classEntity_1a27d30d5f06ae96a4c9a0a26853baa0b6" kindref="member">bbox</ref>-&gt;size.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proj-&gt;transform-&gt;position.x<sp/>=</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player.<ref refid="classEntity_1a56c62246d60d421aaf7c3df9d89dfe45" kindref="member">transform</ref>-&gt;position.x<sp/>+<sp/>(player.<ref refid="classEntity_1a56c62246d60d421aaf7c3df9d89dfe45" kindref="member">transform</ref>-&gt;position.x<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SHOOT_SYSTEM_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="src/GameLogic/Shoot_system.hpp"/>
+  </compounddef>
+</doxygen>

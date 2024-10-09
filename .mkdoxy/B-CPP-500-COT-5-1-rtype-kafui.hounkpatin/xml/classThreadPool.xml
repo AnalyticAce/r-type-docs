@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classThreadPool" kind="class" language="C++" prot="public">
+    <compoundname>ThreadPool</compoundname>
+    <includes refid="ThreadPool_8hpp" local="no">ThreadPool.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classThreadPool_1a2f38eea5e54f8a0bdd766f8c0fd5eea7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; ThreadPool::thread_pool</definition>
+        <argsstring></argsstring>
+        <name>thread_pool</name>
+        <qualifiedname>ThreadPool::thread_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="49" column="15" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadPool_1acb5b3de3636442097ba40eb474b1e897" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_context &amp;</type>
+        <definition>boost::asio::io_context&amp; ThreadPool::io_context</definition>
+        <argsstring></argsstring>
+        <name>io_context</name>
+        <qualifiedname>ThreadPool::io_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="50" column="27" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classThreadPool_1a9d4f2a7da50ded6231873c0cb32b78a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ThreadPool::ThreadPool</definition>
+        <argsstring>(boost::asio::io_context &amp;io_context, std::size_t num_threads)</argsstring>
+        <name>ThreadPool</name>
+        <qualifiedname>ThreadPool::ThreadPool</qualifiedname>
+        <param>
+          <type>boost::asio::io_context &amp;</type>
+          <declname>io_context</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>num_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="17" column="3" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadPool_1a44d3d2ab618970605e684efc216655eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ThreadPool::~ThreadPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreadPool</name>
+        <qualifiedname>ThreadPool::~ThreadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="21" column="3" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadPool_1aec4fdccd497a2e5d2c241414f1babe98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadPool::add_threads</definition>
+        <argsstring>(std::size_t num_threads)</argsstring>
+        <name>add_threads</name>
+        <qualifiedname>ThreadPool::add_threads</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>num_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="22" column="8" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadPool_1a7cd0f9b042ee0c76fb26de0b02769c6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadPool::remove_threads</definition>
+        <argsstring>(std::size_t num_threads)</argsstring>
+        <name>remove_threads</name>
+        <qualifiedname>ThreadPool::remove_threads</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>num_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="28" column="8" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadPool_1a6caabfe3941cd94fa0655a4fd0df77bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadPool::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <qualifiedname>ThreadPool::release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/ThreadPool.hpp" line="37" column="8" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Server/include/ThreadPool.hpp" line="15" column="1" bodyfile="src/Server/include/ThreadPool.hpp" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classThreadPool_1aec4fdccd497a2e5d2c241414f1babe98" prot="public" virt="non-virtual"><scope>ThreadPool</scope><name>add_threads</name></member>
+      <member refid="classThreadPool_1acb5b3de3636442097ba40eb474b1e897" prot="private" virt="non-virtual"><scope>ThreadPool</scope><name>io_context</name></member>
+      <member refid="classThreadPool_1a6caabfe3941cd94fa0655a4fd0df77bc" prot="public" virt="non-virtual"><scope>ThreadPool</scope><name>release</name></member>
+      <member refid="classThreadPool_1a7cd0f9b042ee0c76fb26de0b02769c6c" prot="public" virt="non-virtual"><scope>ThreadPool</scope><name>remove_threads</name></member>
+      <member refid="classThreadPool_1a2f38eea5e54f8a0bdd766f8c0fd5eea7" prot="private" virt="non-virtual"><scope>ThreadPool</scope><name>thread_pool</name></member>
+      <member refid="classThreadPool_1a9d4f2a7da50ded6231873c0cb32b78a1" prot="public" virt="non-virtual"><scope>ThreadPool</scope><name>ThreadPool</name></member>
+      <member refid="classThreadPool_1a44d3d2ab618970605e684efc216655eb" prot="public" virt="non-virtual"><scope>ThreadPool</scope><name>~ThreadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

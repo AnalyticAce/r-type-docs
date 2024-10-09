@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classHealth" kind="class" language="C++" prot="public">
+    <compoundname>Health</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classHealth_1ad6b8f59be742391314db454b36d99fc0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Health::maxHealth</definition>
+        <argsstring></argsstring>
+        <name>maxHealth</name>
+        <qualifiedname>Health::maxHealth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="95" column="7" bodyfile="src/GameLogic/Entity.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHealth_1a69b81c68b97235eb125996df40d3c726" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Health::currentHealth</definition>
+        <argsstring></argsstring>
+        <name>currentHealth</name>
+        <qualifiedname>Health::currentHealth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="96" column="7" bodyfile="src/GameLogic/Entity.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHealth_1acd41f307cc9a942c3335480420c0ace7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Health::Health</definition>
+        <argsstring>()</argsstring>
+        <name>Health</name>
+        <qualifiedname>Health::Health</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="98" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Health::Health</definition>
+        <argsstring>(int maxHp)</argsstring>
+        <name>Health</name>
+        <qualifiedname>Health::Health</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxHp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="99" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classHealth_1a63018f22213c76433bc103f0ef4550ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health::takeDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>takeDamage</name>
+        <qualifiedname>Health::takeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="101" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classHealth_1acd41f307cc9a942c3335480420c0ace7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Health::Health</definition>
+        <argsstring>()</argsstring>
+        <name>Health</name>
+        <qualifiedname>Health::Health</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="98" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Health::Health</definition>
+        <argsstring>(int maxHp)</argsstring>
+        <name>Health</name>
+        <qualifiedname>Health::Health</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxHp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="99" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classHealth_1a63018f22213c76433bc103f0ef4550ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health::takeDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>takeDamage</name>
+        <qualifiedname>Health::takeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="101" column="8" bodyfile="src/Server/include/Entity.hpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="93" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="93" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classHealth_1a69b81c68b97235eb125996df40d3c726" prot="public" virt="non-virtual"><scope>Health</scope><name>currentHealth</name></member>
+      <member refid="classHealth_1acd41f307cc9a942c3335480420c0ace7" prot="public" virt="non-virtual"><scope>Health</scope><name>Health</name></member>
+      <member refid="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" prot="public" virt="non-virtual"><scope>Health</scope><name>Health</name></member>
+      <member refid="classHealth_1acd41f307cc9a942c3335480420c0ace7" prot="public" virt="non-virtual"><scope>Health</scope><name>Health</name></member>
+      <member refid="classHealth_1ace4a2fa4cd50a99ac9f468570fbfcca2" prot="public" virt="non-virtual"><scope>Health</scope><name>Health</name></member>
+      <member refid="classHealth_1ad6b8f59be742391314db454b36d99fc0" prot="public" virt="non-virtual"><scope>Health</scope><name>maxHealth</name></member>
+      <member refid="classHealth_1a63018f22213c76433bc103f0ef4550ad" prot="public" virt="non-virtual"><scope>Health</scope><name>takeDamage</name></member>
+      <member refid="classHealth_1a63018f22213c76433bc103f0ef4550ad" prot="public" virt="non-virtual"><scope>Health</scope><name>takeDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Client_2network_2connect_8cpp" kind="file" language="C++">
+    <compoundname>connect.cpp</compoundname>
+    <includes refid="Client_2network_2connect_8hpp" local="yes">../../../include/Client/network/connect.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>../../../include/Client/network/connect.hpp</label>
+        <link refid="Client_2network_2connect_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Client/network/connect.cpp</label>
+        <link refid="Client_2network_2connect_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../../include/Client/network/connect.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classClient_1ae51af7aa6b8f591496a8f6a4a87a14bf" kindref="member">Client::Client</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classClient_1a840e519ca781888cbd54181572ebe3a7" kindref="member">Client::~Client</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">std::string<sp/><ref refid="classClient_1af2beaf21df12c94081fae19d6e1b0a11" kindref="member">Client::connect</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Connected<sp/>to<sp/>the<sp/>server&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="src/Client/network/connect.cpp"/>
+  </compounddef>
+</doxygen>

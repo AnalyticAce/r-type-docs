@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classWindowManager" kind="class" language="C++" prot="public">
+    <compoundname>WindowManager</compoundname>
+    <includes refid="WindowManager_8hpp" local="no">WindowManager.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWindowManager_1a61d47c11da0af06b979ec784a21349ea" prot="private" static="no" mutable="no">
+        <type>sf::RenderWindow</type>
+        <definition>sf::RenderWindow WindowManager::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>WindowManager::window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="10" column="20" bodyfile="include/Engine/Window/WindowManager.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWindowManager_1a79c1e060105721897cfff91dddc1b6b7" prot="private" static="no" mutable="no">
+        <type>sf::Font</type>
+        <definition>sf::Font WindowManager::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>WindowManager::font</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="11" column="12" bodyfile="include/Engine/Window/WindowManager.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWindowManager_1a9101d75211a8b76d2d53fe416f370a29" prot="private" static="no" mutable="no">
+        <type>sf::Event</type>
+        <definition>sf::Event WindowManager::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <qualifiedname>WindowManager::event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="12" column="13" bodyfile="include/Engine/Window/WindowManager.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWindowManager_1a369dd8c4e4f2cedf3ba2aaeed24533a0" prot="private" static="no" mutable="no">
+        <type><ref refid="classSetting" kindref="compound">Setting</ref></type>
+        <definition>Setting WindowManager::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>WindowManager::settings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="13" column="11" bodyfile="include/Engine/Window/WindowManager.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWindowManager_1ac135d21009f510fd53eb9deae9d09e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WindowManager::WindowManager</definition>
+        <argsstring>(int width, int height, const std::string &amp;windowName)</argsstring>
+        <name>WindowManager</name>
+        <qualifiedname>WindowManager::WindowManager</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>windowName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="16" column="3" bodyfile="src/Client/Setting/Window.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1ae80f59af0995398f10e08c6db2cd24fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WindowManager::keepOpen</definition>
+        <argsstring>()</argsstring>
+        <name>keepOpen</name>
+        <qualifiedname>WindowManager::keepOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="17" column="8" bodyfile="src/Client/Setting/Window.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1a857d812b14e296e5e54aae41ad036a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WindowManager::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <qualifiedname>WindowManager::render</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="18" column="8" bodyfile="src/Client/Setting/Window.cpp" bodystart="25" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1a6fbdb45f533ddb9d54cde5288c832e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WindowManager::loadFont</definition>
+        <argsstring>(const std::string &amp;fontPath)</argsstring>
+        <name>loadFont</name>
+        <qualifiedname>WindowManager::loadFont</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="19" column="8" bodyfile="src/Client/Setting/Window.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1a0f537986c4e536250edcca73fc6c8fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WindowManager::handleEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleEvent</name>
+        <qualifiedname>WindowManager::handleEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="20" column="8" bodyfile="src/Client/Setting/Window.cpp" bodystart="46" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1aa8f59bd5e25c0716346957f1af53e08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WindowManager::drawTextTemporarily</definition>
+        <argsstring>(const std::string &amp;text, float x, float y, sf::Color color, float duration)</argsstring>
+        <name>drawTextTemporarily</name>
+        <qualifiedname>WindowManager::drawTextTemporarily</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="21" column="8" bodyfile="src/Engine/Window/WindowManager.cpp" bodystart="34" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classWindowManager_1a5dc26d52d436644b60d4fe5dbf4cda0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::RenderWindow &amp;</type>
+        <definition>sf::RenderWindow &amp; WindowManager::GetWindow</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindow</name>
+        <qualifiedname>WindowManager::GetWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Engine/Window/WindowManager.hpp" line="24" column="20" bodyfile="src/Client/Setting/Window.cpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Engine/Window/WindowManager.hpp" line="8" column="1" bodyfile="include/Engine/Window/WindowManager.hpp" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classWindowManager_1aa8f59bd5e25c0716346957f1af53e08b" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>drawTextTemporarily</name></member>
+      <member refid="classWindowManager_1a9101d75211a8b76d2d53fe416f370a29" prot="private" virt="non-virtual"><scope>WindowManager</scope><name>event</name></member>
+      <member refid="classWindowManager_1a79c1e060105721897cfff91dddc1b6b7" prot="private" virt="non-virtual"><scope>WindowManager</scope><name>font</name></member>
+      <member refid="classWindowManager_1a5dc26d52d436644b60d4fe5dbf4cda0b" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>GetWindow</name></member>
+      <member refid="classWindowManager_1a0f537986c4e536250edcca73fc6c8fbc" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>handleEvent</name></member>
+      <member refid="classWindowManager_1ae80f59af0995398f10e08c6db2cd24fd" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>keepOpen</name></member>
+      <member refid="classWindowManager_1a6fbdb45f533ddb9d54cde5288c832e2c" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>loadFont</name></member>
+      <member refid="classWindowManager_1a857d812b14e296e5e54aae41ad036a16" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>render</name></member>
+      <member refid="classWindowManager_1a369dd8c4e4f2cedf3ba2aaeed24533a0" prot="private" virt="non-virtual"><scope>WindowManager</scope><name>settings</name></member>
+      <member refid="classWindowManager_1a61d47c11da0af06b979ec784a21349ea" prot="private" virt="non-virtual"><scope>WindowManager</scope><name>window</name></member>
+      <member refid="classWindowManager_1ac135d21009f510fd53eb9deae9d09e26" prot="public" virt="non-virtual"><scope>WindowManager</scope><name>WindowManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

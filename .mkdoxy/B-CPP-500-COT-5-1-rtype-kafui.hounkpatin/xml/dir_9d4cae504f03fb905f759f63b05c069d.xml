@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_9d4cae504f03fb905f759f63b05c069d" kind="dir">
+    <compoundname>include/Engine/Image</compoundname>
+    <innerfile refid="ImageManager_8hpp">ImageManager.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Engine/Image/"/>
+  </compounddef>
+</doxygen>

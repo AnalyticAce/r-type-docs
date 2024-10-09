@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classRectShape" kind="class" language="C++" prot="public">
+    <compoundname>RectShape</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" prot="public" static="no" mutable="no">
+        <type>sf::RectangleShape</type>
+        <definition>sf::RectangleShape RectShape::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>RectShape::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="51" column="22" bodyfile="src/GameLogic/Entity.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRectShape_1af14c28d3a3236c8ef09f7aca83fc0c30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RectShape::RectShape</definition>
+        <argsstring>()</argsstring>
+        <name>RectShape</name>
+        <qualifiedname>RectShape::RectShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="52" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classRectShape_1abb084523ba5cb3e08677c0942eaca3da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RectShape::RectShape</definition>
+        <argsstring>(float width, float height, sf::Color out_color, sf::Color in_color, int thikness)</argsstring>
+        <name>RectShape</name>
+        <qualifiedname>RectShape::RectShape</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>out_color</declname>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>in_color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>thikness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="53" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="49" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="49" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classRectShape_1af14c28d3a3236c8ef09f7aca83fc0c30" prot="public" virt="non-virtual"><scope>RectShape</scope><name>RectShape</name></member>
+      <member refid="classRectShape_1abb084523ba5cb3e08677c0942eaca3da" prot="public" virt="non-virtual"><scope>RectShape</scope><name>RectShape</name></member>
+      <member refid="classRectShape_1a4b0d8229239cd8679e2b9783656cdc27" prot="public" virt="non-virtual"><scope>RectShape</scope><name>shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

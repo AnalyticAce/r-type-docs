@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classSetting" kind="class" language="C++" prot="public">
+    <compoundname>Setting</compoundname>
+    <includes refid="Setting_8hpp" local="no">Setting.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSetting_1a51b45f032ac54999fc048c26c4502c12" prot="private" static="no" mutable="no">
+        <type><ref refid="classImageManager" kindref="compound">ImageManager</ref></type>
+        <definition>ImageManager Setting::settingImage</definition>
+        <argsstring></argsstring>
+        <name>settingImage</name>
+        <qualifiedname>Setting::settingImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="27" column="18" bodyfile="src/Client/Setting/Setting.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSetting_1a1e995c4d22d5b9876c05b33e72639bce" prot="private" static="no" mutable="no">
+        <type><ref refid="classImageManager" kindref="compound">ImageManager</ref></type>
+        <definition>ImageManager Setting::backgroundImage</definition>
+        <argsstring></argsstring>
+        <name>backgroundImage</name>
+        <qualifiedname>Setting::backgroundImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="28" column="18" bodyfile="src/Client/Setting/Setting.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSetting_1a879f662bd6723936c5654391353e9905" prot="private" static="no" mutable="no">
+        <type><ref refid="classAudioManager" kindref="compound">AudioManager</ref></type>
+        <definition>AudioManager Setting::RoomMusic</definition>
+        <argsstring></argsstring>
+        <name>RoomMusic</name>
+        <qualifiedname>Setting::RoomMusic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="29" column="18" bodyfile="src/Client/Setting/Setting.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSetting_1ab7384484cfed9d844bee925946c6c3cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classMouseManager" kindref="compound">MouseManager</ref></type>
+        <definition>MouseManager Setting::mouse</definition>
+        <argsstring></argsstring>
+        <name>mouse</name>
+        <qualifiedname>Setting::mouse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="30" column="18" bodyfile="src/Client/Setting/Setting.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSetting_1aaba50d0cf1ccb3297726dcd7745c0ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Setting::Setting</definition>
+        <argsstring>()</argsstring>
+        <name>Setting</name>
+        <qualifiedname>Setting::Setting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="15" column="5" bodyfile="src/Client/Setting/Setting.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a328f6cad583dff1270fa5424dff8fee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Setting::~Setting</definition>
+        <argsstring>()</argsstring>
+        <name>~Setting</name>
+        <qualifiedname>Setting::~Setting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="16" column="5" bodyfile="src/Client/Setting/Setting.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a03e8df307ddb4d15d0c2ae75e7c355aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Setting::setsetting</definition>
+        <argsstring>(const std::string &amp;filePath, float windowWidth, float windowHeight)</argsstring>
+        <name>setsetting</name>
+        <qualifiedname>Setting::setsetting</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="17" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a86ccbe4df760b5a267275de6caf99c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Setting::drawsetting</definition>
+        <argsstring>(sf::RenderWindow &amp;window)</argsstring>
+        <name>drawsetting</name>
+        <qualifiedname>Setting::drawsetting</qualifiedname>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="18" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a8d8977caf8448b32b033e8793f8bd1e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Setting::setbackground</definition>
+        <argsstring>(const std::string &amp;filePath, float windowWidth, float windowHeight)</argsstring>
+        <name>setbackground</name>
+        <qualifiedname>Setting::setbackground</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="19" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a278908f7e69695faabf626ccf40e04f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Setting::drawbackground</definition>
+        <argsstring>(sf::RenderWindow &amp;window)</argsstring>
+        <name>drawbackground</name>
+        <qualifiedname>Setting::drawbackground</qualifiedname>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="20" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a5442c5cb4b7d85524e4eb8ba6f5abbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Setting::getname</definition>
+        <argsstring>()</argsstring>
+        <name>getname</name>
+        <qualifiedname>Setting::getname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="21" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a8032d7c9b79010ff4edeac98f15d617f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const sf::Sprite &amp;</type>
+        <definition>const sf::Sprite &amp; Setting::getSettingSprite</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettingSprite</name>
+        <qualifiedname>Setting::getSettingSprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="22" column="22" bodyfile="src/Client/Setting/Setting.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a241a9edcfadded70d793d6afb15b2f48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const sf::Sprite &amp;</type>
+        <definition>const sf::Sprite &amp; Setting::getBackgroundSprite</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundSprite</name>
+        <qualifiedname>Setting::getBackgroundSprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="23" column="22" bodyfile="src/Client/Setting/Setting.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classSetting_1a5cdaec8f39f956b4b1630d075e2ebe9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMouseManager" kindref="compound">MouseManager</ref> &amp;</type>
+        <definition>MouseManager &amp; Setting::getMouse</definition>
+        <argsstring>()</argsstring>
+        <name>getMouse</name>
+        <qualifiedname>Setting::getMouse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="25" column="18" bodyfile="src/Client/Setting/Setting.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSetting_1aba42ea351929c217e22383a80ad85892" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Setting::centerImage</definition>
+        <argsstring>(ImageManager &amp;img, float windowWidth, float windowHeight)</argsstring>
+        <name>centerImage</name>
+        <qualifiedname>Setting::centerImage</qualifiedname>
+        <param>
+          <type><ref refid="classImageManager" kindref="compound">ImageManager</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>windowHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Client/Setting/Setting.hpp" line="31" column="10" bodyfile="src/Client/Setting/Setting.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Client/Setting/Setting.hpp" line="13" column="1" bodyfile="src/Client/Setting/Setting.hpp" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classSetting_1a1e995c4d22d5b9876c05b33e72639bce" prot="private" virt="non-virtual"><scope>Setting</scope><name>backgroundImage</name></member>
+      <member refid="classSetting_1aba42ea351929c217e22383a80ad85892" prot="private" virt="non-virtual"><scope>Setting</scope><name>centerImage</name></member>
+      <member refid="classSetting_1a278908f7e69695faabf626ccf40e04f9" prot="public" virt="non-virtual"><scope>Setting</scope><name>drawbackground</name></member>
+      <member refid="classSetting_1a86ccbe4df760b5a267275de6caf99c6e" prot="public" virt="non-virtual"><scope>Setting</scope><name>drawsetting</name></member>
+      <member refid="classSetting_1a241a9edcfadded70d793d6afb15b2f48" prot="public" virt="non-virtual"><scope>Setting</scope><name>getBackgroundSprite</name></member>
+      <member refid="classSetting_1a5cdaec8f39f956b4b1630d075e2ebe9e" prot="public" virt="non-virtual"><scope>Setting</scope><name>getMouse</name></member>
+      <member refid="classSetting_1a5442c5cb4b7d85524e4eb8ba6f5abbff" prot="public" virt="non-virtual"><scope>Setting</scope><name>getname</name></member>
+      <member refid="classSetting_1a8032d7c9b79010ff4edeac98f15d617f" prot="public" virt="non-virtual"><scope>Setting</scope><name>getSettingSprite</name></member>
+      <member refid="classSetting_1ab7384484cfed9d844bee925946c6c3cf" prot="private" virt="non-virtual"><scope>Setting</scope><name>mouse</name></member>
+      <member refid="classSetting_1a879f662bd6723936c5654391353e9905" prot="private" virt="non-virtual"><scope>Setting</scope><name>RoomMusic</name></member>
+      <member refid="classSetting_1a8d8977caf8448b32b033e8793f8bd1e8" prot="public" virt="non-virtual"><scope>Setting</scope><name>setbackground</name></member>
+      <member refid="classSetting_1a03e8df307ddb4d15d0c2ae75e7c355aa" prot="public" virt="non-virtual"><scope>Setting</scope><name>setsetting</name></member>
+      <member refid="classSetting_1aaba50d0cf1ccb3297726dcd7745c0ecd" prot="public" virt="non-virtual"><scope>Setting</scope><name>Setting</name></member>
+      <member refid="classSetting_1a51b45f032ac54999fc048c26c4502c12" prot="private" virt="non-virtual"><scope>Setting</scope><name>settingImage</name></member>
+      <member refid="classSetting_1a328f6cad583dff1270fa5424dff8fee6" prot="public" virt="non-virtual"><scope>Setting</scope><name>~Setting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

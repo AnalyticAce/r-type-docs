@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classShootSystem" kind="class" language="C++" prot="public">
+    <compoundname>ShootSystem</compoundname>
+    <includes refid="GameLogic_2Shoot__system_8hpp" local="no">Shoot_system.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShootSystem_1a669530d36401e1f2ad9a90a382773002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShootSystem::spawn_projectile</definition>
+        <argsstring>(Registry &amp;registry, Entity &amp;player)</argsstring>
+        <name>spawn_projectile</name>
+        <qualifiedname>ShootSystem::spawn_projectile</qualifiedname>
+        <param>
+          <type><ref refid="classRegistry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Shoot_system.hpp" line="16" column="8" bodyfile="src/GameLogic/Shoot_system.hpp" bodystart="16" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classShootSystem_1a669530d36401e1f2ad9a90a382773002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShootSystem::spawn_projectile</definition>
+        <argsstring>(Registry &amp;registry, Entity &amp;player)</argsstring>
+        <name>spawn_projectile</name>
+        <qualifiedname>ShootSystem::spawn_projectile</qualifiedname>
+        <param>
+          <type><ref refid="classRegistry" kindref="compound">Registry</ref> &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Shoot_system.hpp" line="16" column="8" bodyfile="src/Server/include/Shoot_system.hpp" bodystart="16" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Shoot_system.hpp" line="14" column="1" bodyfile="src/GameLogic/Shoot_system.hpp" bodystart="14" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classShootSystem_1a669530d36401e1f2ad9a90a382773002" prot="public" virt="non-virtual"><scope>ShootSystem</scope><name>spawn_projectile</name></member>
+      <member refid="classShootSystem_1a669530d36401e1f2ad9a90a382773002" prot="public" virt="non-virtual"><scope>ShootSystem</scope><name>spawn_projectile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

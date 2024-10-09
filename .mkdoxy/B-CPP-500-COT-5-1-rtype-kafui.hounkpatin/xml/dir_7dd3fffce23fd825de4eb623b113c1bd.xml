@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7dd3fffce23fd825de4eb623b113c1bd" kind="dir">
+    <compoundname>include/Engine</compoundname>
+    <innerdir refid="dir_d16831a22b1176c437f87c2d0440ff32">include/Engine/Animation</innerdir>
+    <innerdir refid="dir_c82188eaffb96b2487ed13b79df10c60">include/Engine/Audio</innerdir>
+    <innerdir refid="dir_9d4cae504f03fb905f759f63b05c069d">include/Engine/Image</innerdir>
+    <innerdir refid="dir_011a5bb273ab46acf9be02ac4bf7f0a3">include/Engine/Input</innerdir>
+    <innerdir refid="dir_f193d769e7e735a6067828aa983bf770">include/Engine/Mouse</innerdir>
+    <innerdir refid="dir_d430bb2cf01387b823ae007b3e5a1c3c">include/Engine/Shape</innerdir>
+    <innerdir refid="dir_9e6b83ddf0d374080d4a6053f7ebb47f">include/Engine/Window</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Engine/"/>
+  </compounddef>
+</doxygen>

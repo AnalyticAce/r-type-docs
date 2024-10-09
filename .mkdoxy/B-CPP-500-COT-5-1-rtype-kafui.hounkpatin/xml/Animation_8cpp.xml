@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Animation_8cpp" kind="file" language="C++">
+    <compoundname>Animation.cpp</compoundname>
+    <includes refid="Animation_8hpp" local="yes">../../../include/Engine/Animation/Animation.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>../../../include/Engine/Animation/Animation.hpp</label>
+        <link refid="Animation_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Engine/Animation/Animation.cpp</label>
+        <link refid="Animation_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="4">
+        <label>SFML/Window.hpp</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../../include/Engine/Animation/Animation.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classAnimation_1a83f0a16cef7117f187ad596de38dd9d6" kindref="member">Animation::Animation</ref>()<sp/>:<sp/>frameTime(0.1f),<sp/>currentFrame(0)</highlight><highlight class="comment">/*,<sp/>totalFrames(16)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>animations[</highlight><highlight class="stringliteral">&quot;red&quot;</highlight><highlight class="normal">].loadFromFile(</highlight><highlight class="stringliteral">&quot;../../../assets/image/Player/red1.gif&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>animations[</highlight><highlight class="stringliteral">&quot;gray&quot;</highlight><highlight class="normal">].loadFromFile(</highlight><highlight class="stringliteral">&quot;../../../assets/image/Player/gray.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setScale(2.0f,<sp/>2.0f);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="classAnimation_1a401b68793d4fbf48d481c030ee4b2a16" kindref="member">Animation::~Animation</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aba09272a26f72ae01026a91c581fbff6" kindref="member">Animation::loadAnimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frames)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animations.find(name_by_color)<sp/>!=<sp/>animations.end())<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structAnimationData" kindref="compound">AnimationData</ref><sp/>data;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>.setTexture(animations[name_by_color]);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1ad5ce4054939bef7ce5788c84663e0929" kindref="member">totalFrames</ref><sp/>=<sp/>frames;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" kindref="member">currentFrame</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>.setScale(2.0f,<sp/>2.0f);<sp/><sp/></highlight><highlight class="comment">//<sp/>Tu<sp/>peux<sp/>définir<sp/>une<sp/>échelle<sp/>personnalisée<sp/>ici</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color]<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if<sp/>(animations.find(name_by_color)<sp/>!=<sp/>animations.end())<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>texture<sp/>=<sp/>animations[name_by_color];</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprite.setTexture(texture);</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentFrame<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalFrames<sp/>=<sp/>frames;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>&quot;Error:<sp/>animation<sp/>of<sp/>&quot;<sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/>&quot;<sp/>not<sp/>found&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a90b64e1f99db05a8064ac58d8c43dc8c" kindref="member">Animation::update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structAnimationData" kindref="compound">AnimationData</ref>&amp;<sp/>data<sp/>=<sp/>animationsData[name_by_color];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameWidth<sp/>=<sp/>data.<ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>.getTexture()-&gt;getSize().x<sp/>/<sp/>data.<ref refid="structAnimationData_1ad5ce4054939bef7ce5788c84663e0929" kindref="member">totalFrames</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.<ref refid="structAnimationData_1a70ddf42be041189d60e96d93960a661e" kindref="member">clock</ref>.getElapsedTime().asSeconds()<sp/>&gt;=<sp/>frameTime)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" kindref="member">currentFrame</ref><sp/>=<sp/>(data.<ref refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" kindref="member">currentFrame</ref><sp/>+<sp/>1)<sp/>%<sp/>data.<ref refid="structAnimationData_1ad5ce4054939bef7ce5788c84663e0929" kindref="member">totalFrames</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>.setTextureRect(sf::IntRect(data.<ref refid="structAnimationData_1a014038daf3a6e26e954e6267084947db" kindref="member">currentFrame</ref><sp/>*<sp/>frameWidth,<sp/>0,<sp/>frameWidth,<sp/>data.<ref refid="structAnimationData_1a22fb4f5b2a843636e8e0692612f3fcb0" kindref="member">sprite</ref>.getTexture()-&gt;getSize().y));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.<ref refid="structAnimationData_1a70ddf42be041189d60e96d93960a661e" kindref="member">clock</ref>.restart();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if<sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AnimationData&amp;<sp/>data<sp/>=<sp/>animationsData[name_by_color];</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>frameWidth<sp/>=<sp/>data.sprite.getTexture()-&gt;getSize().x<sp/>/<sp/>data.totalFrames;</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(clock.getElapsedTime().asSeconds()<sp/>&gt;=<sp/>frameTime)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.currentFrame<sp/>=<sp/>(data.currentFrame<sp/>+<sp/>1)<sp/>%<sp/>data.totalFrames;</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.sprite.setTextureRect(sf::IntRect(data.currentFrame<sp/>*<sp/>frameWidth,<sp/>0,<sp/>frameWidth,<sp/>data.sprite.getTexture()-&gt;getSize().y));</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock.restart();</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*int<sp/>frameWidth<sp/>=<sp/>texture.getSize().x<sp/>/<sp/>totalFrames;</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(clock.getElapsedTime().asSeconds()<sp/>&gt;=<sp/>frameTime)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentFrame<sp/>=<sp/>(currentFrame<sp/>+<sp/>1)<sp/>%<sp/>totalFrames;</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprite.setTextureRect(sf::IntRect(currentFrame<sp/>*<sp/>frameWidth,<sp/>0,<sp/>frameWidth,<sp/>texture.getSize().y));</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock.restart();</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aaa3c62ae9b5bb72246379a2111ca9d24" kindref="member">Animation::render</ref>(sf::RenderWindow&amp;<sp/>window,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.draw(animationsData[name_by_color].sprite);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*window.draw(sprite);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aaf1fc296e5777e3826e5d6d3937a701d" kindref="member">Animation::setScale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setScale(scaleX,<sp/>scaleY);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a41f7da50ddbf70faecb33a84f10d9cc6" kindref="member">Animation::setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color].sprite.setPosition(x,<sp/>y);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1a9260482303623c5efebe69c7212c2868" kindref="member">Animation::moveY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedY)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Vector2f<sp/>currentPosition<sp/>=<sp/>animationsData[name_by_color].sprite.getPosition();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color].sprite.setPosition(currentPosition.x,<sp/>currentPosition.y<sp/>+<sp/>SpeedY);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1abffaa3556d58f0c6d75000f82f797731" kindref="member">Animation::moveYUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedY)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Vector2f<sp/>currentPosition<sp/>=<sp/>animationsData[name_by_color].sprite.getPosition();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color].sprite.setPosition(currentPosition.x,<sp/>currentPosition.y<sp/>-<sp/>SpeedY);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1aa14154e366385bfea01574268fa9c002" kindref="member">Animation::moveXRight</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedX)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Vector2f<sp/>currentPosition<sp/>=<sp/>animationsData[name_by_color].sprite.getPosition();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color].sprite.setPosition(currentPosition.x<sp/>+<sp/>SpeedX,<sp/>currentPosition.y);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAnimation_1ada037d97063cd8451b326bace051a791" kindref="member">Animation::moveXLeft</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name_by_color,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SpeedX)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animationsData.find(name_by_color)<sp/>!=<sp/>animationsData.end())<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Vector2f<sp/>currentPosition<sp/>=<sp/>animationsData[name_by_color].sprite.getPosition();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>animationsData[name_by_color].sprite.setPosition(currentPosition.x<sp/>-<sp/>SpeedX,<sp/>currentPosition.y);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>animation<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name_by_color<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Engine/Animation/Animation.cpp"/>
+  </compounddef>
+</doxygen>

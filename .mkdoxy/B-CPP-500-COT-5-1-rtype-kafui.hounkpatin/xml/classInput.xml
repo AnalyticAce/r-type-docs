@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInput" kind="class" language="C++" prot="public">
+    <compoundname>Input</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classInput_1a726284bbedf1b44c15c0bfe55c9752db" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Input::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <qualifiedname>Input::up</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="78" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInput_1a09b50da9cdd6e7998d3268bc080c87d7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Input::down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <qualifiedname>Input::down</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="79" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInput_1a05fcbeeceb9603e642f34574306280bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Input::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>Input::left</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="80" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInput_1acda9f275c5e2bf1bc6d1a1511f46f746" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Input::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>Input::right</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="81" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInput_1abc453d8d662da67b21b47ade889fc486" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Input::shoot</definition>
+        <argsstring></argsstring>
+        <name>shoot</name>
+        <qualifiedname>Input::shoot</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="82" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInput_1a8bec96dd53baf5ec754c199af3c957c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Input::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>Input::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="84" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classInput_1a8bec96dd53baf5ec754c199af3c957c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Input::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>Input::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="84" column="8" bodyfile="src/Server/include/Entity.hpp" bodystart="84" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="76" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="76" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classInput_1a09b50da9cdd6e7998d3268bc080c87d7" prot="public" virt="non-virtual"><scope>Input</scope><name>down</name></member>
+      <member refid="classInput_1a05fcbeeceb9603e642f34574306280bb" prot="public" virt="non-virtual"><scope>Input</scope><name>left</name></member>
+      <member refid="classInput_1a8bec96dd53baf5ec754c199af3c957c8" prot="public" virt="non-virtual"><scope>Input</scope><name>reset</name></member>
+      <member refid="classInput_1a8bec96dd53baf5ec754c199af3c957c8" prot="public" virt="non-virtual"><scope>Input</scope><name>reset</name></member>
+      <member refid="classInput_1acda9f275c5e2bf1bc6d1a1511f46f746" prot="public" virt="non-virtual"><scope>Input</scope><name>right</name></member>
+      <member refid="classInput_1abc453d8d662da67b21b47ade889fc486" prot="public" virt="non-virtual"><scope>Input</scope><name>shoot</name></member>
+      <member refid="classInput_1a726284bbedf1b44c15c0bfe55c9752db" prot="public" virt="non-virtual"><scope>Input</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

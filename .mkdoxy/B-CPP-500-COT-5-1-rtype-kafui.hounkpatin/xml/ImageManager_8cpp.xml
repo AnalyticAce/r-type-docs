@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ImageManager_8cpp" kind="file" language="C++">
+    <compoundname>ImageManager.cpp</compoundname>
+    <includes refid="ImageManager_8hpp" local="yes">../../../include/Engine/Image/ImageManager.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>../../../include/Engine/Image/ImageManager.hpp</label>
+        <link refid="ImageManager_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Engine/Image/ImageManager.cpp</label>
+        <link refid="ImageManager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../../include/Engine/Image/ImageManager.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classImageManager_1a8c856af0e3f0d23da7c765b0e33e585e" kindref="member">ImageManager::ImageManager</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classImageManager_1a3cad118fdf026d379641fb6b52cd1884" kindref="member">ImageManager::~ImageManager</ref>()<sp/>{<sp/><ref refid="classImageManager_1af5ab1a6d7ba480a283e0c9c4f256001b" kindref="member">destroyImage</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1ae538700efd9a04a6fd367628bb81687a" kindref="member">ImageManager::createImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;filePath)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>.loadFromFile(filePath))<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Erreur:<sp/>impossible<sp/>de<sp/>charger<sp/>l&apos;image<sp/>depuis<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>filePath</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>sprite.setTexture(<ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1a9f4e347cd5dc78b9a4e67aa2d5178f89" kindref="member">ImageManager::setPosition</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)<sp/>{<sp/>sprite.setPosition(x,<sp/>y);<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1a959834d402f25003890fbdc122057bb1" kindref="member">ImageManager::setScale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>sprite.setScale(scaleX,<sp/>scaleY);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1af38896fbfd2d2b505f52cecadb23ee95" kindref="member">ImageManager::draw</ref>(sf::RenderWindow<sp/>&amp;window)<sp/>{<sp/>window.draw(sprite);<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1af5ab1a6d7ba480a283e0c9c4f256001b" kindref="member">ImageManager::destroyImage</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">sf::FloatRect<sp/><ref refid="classImageManager_1a5322bf5766be6dff2257a5833bca917e" kindref="member">ImageManager::getGlobalBounds</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sprite.getGlobalBounds();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageManager_1accc94d2ff77fa878d7c2b326f81f4565" kindref="member">ImageManager::fitToScreen</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>windowWidth,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>windowHeight)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>.getSize().x<sp/>==<sp/>0<sp/>||<sp/><ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>.getSize().y<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX<sp/>=<sp/>windowWidth<sp/>/<sp/><ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>.getSize().x;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY<sp/>=<sp/>windowHeight<sp/>/<sp/><ref refid="classImageManager_1aa7783c2def8474c05a17bbb952c58c01" kindref="member">texture</ref>.getSize().y;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>std::max(scaleX,<sp/>scaleY);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setScale(scale,<sp/>scale);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Center<sp/>the<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::FloatRect<sp/>bounds<sp/>=<sp/>sprite.getLocalBounds();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setOrigin(bounds.width<sp/>/<sp/>2,<sp/>bounds.height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite.setPosition(windowWidth<sp/>/<sp/>2,<sp/>windowHeight<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Engine/Image/ImageManager.cpp"/>
+  </compounddef>
+</doxygen>

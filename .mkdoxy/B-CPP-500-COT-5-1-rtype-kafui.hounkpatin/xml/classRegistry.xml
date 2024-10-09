@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classRegistry" kind="class" language="C++" prot="public">
+    <compoundname>Registry</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRegistry_1a9efe71ac09132eb7c6583f2ea08653b8" prot="private" static="no" mutable="no">
+        <type><ref refid="Server_2include_2Entity_8hpp_1a8ed9e0a745af30dbc2019425ca26772a" kindref="member">EntityMap</ref></type>
+        <definition>EntityMap Registry::_entities_map</definition>
+        <argsstring></argsstring>
+        <name>_entities_map</name>
+        <qualifiedname>Registry::_entities_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="140" column="13" bodyfile="src/GameLogic/Entity.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRegistry_1a8d9f7500f8f76b3fd84f378da0582a3e" prot="private" static="no" mutable="no">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref></type>
+        <definition>EntityVector Registry::_entities_vector</definition>
+        <argsstring></argsstring>
+        <name>_entities_vector</name>
+        <qualifiedname>Registry::_entities_vector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="141" column="16" bodyfile="src/GameLogic/Entity.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRegistry_1a205a256cbf75ab251aa6a0086e3c9b2b" prot="private" static="no" mutable="no">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref></type>
+        <definition>EntityVector Registry::_new_entities</definition>
+        <argsstring></argsstring>
+        <name>_new_entities</name>
+        <qualifiedname>Registry::_new_entities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="142" column="16" bodyfile="src/GameLogic/Entity.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRegistry_1a3a173441acf6a8cf5746be4944397a6d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Registry::_entities_count</definition>
+        <argsstring></argsstring>
+        <name>_entities_count</name>
+        <qualifiedname>Registry::_entities_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="143" column="10" bodyfile="src/GameLogic/Entity.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Registry::Registry</definition>
+        <argsstring>()</argsstring>
+        <name>Registry</name>
+        <qualifiedname>Registry::Registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="146" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1afbffaf13d8ec75c202d42dec47d21a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::entity_update</definition>
+        <argsstring>()</argsstring>
+        <name>entity_update</name>
+        <qualifiedname>Registry::entity_update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="147" column="8" bodyfile="src/GameLogic/Entity.cpp" bodystart="10" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a175e1136557c0a34e380ae1e31913445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classEntity" kindref="compound">Entity</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Entity &gt; Registry::add_entity</definition>
+        <argsstring>(const std::string tag)</argsstring>
+        <name>add_entity</name>
+        <qualifiedname>Registry::add_entity</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="148" column="19" bodyfile="src/GameLogic/Entity.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref> &amp;</type>
+        <definition>EntityVector &amp; Registry::get_entities</definition>
+        <argsstring>(const std::string tag)</argsstring>
+        <name>get_entities</name>
+        <qualifiedname>Registry::get_entities</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="149" column="16" bodyfile="src/GameLogic/Entity.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref> &amp;</type>
+        <definition>EntityVector &amp; Registry::get_entities</definition>
+        <argsstring>()</argsstring>
+        <name>get_entities</name>
+        <qualifiedname>Registry::get_entities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="150" column="16" bodyfile="src/GameLogic/Entity.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a34fd387f24d7d8cfa2bc923134acc38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Vector2D Registry::spawn_enemy</definition>
+        <argsstring>()</argsstring>
+        <name>spawn_enemy</name>
+        <qualifiedname>Registry::spawn_enemy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="151" column="8" bodyfile="src/GameLogic/Entity.cpp" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1abd72bee0e1a04c1996743dbfbb9a31b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::spawn_coin</definition>
+        <argsstring>()</argsstring>
+        <name>spawn_coin</name>
+        <qualifiedname>Registry::spawn_coin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="152" column="8" bodyfile="src/GameLogic/Entity.cpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1aae7e3c1a5a7cc768a9fee6b92930bf21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::spawn_player</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>spawn_player</name>
+        <qualifiedname>Registry::spawn_player</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="153" column="8" bodyfile="src/GameLogic/Entity.cpp" bodystart="68" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a6d530523aae13c6b709e314033d126f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::remove_entity</definition>
+        <argsstring>(const size_t id)</argsstring>
+        <name>remove_entity</name>
+        <qualifiedname>Registry::remove_entity</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="154" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Registry::Registry</definition>
+        <argsstring>()</argsstring>
+        <name>Registry</name>
+        <qualifiedname>Registry::Registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="146" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1afbffaf13d8ec75c202d42dec47d21a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::entity_update</definition>
+        <argsstring>()</argsstring>
+        <name>entity_update</name>
+        <qualifiedname>Registry::entity_update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="147" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a175e1136557c0a34e380ae1e31913445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classEntity" kindref="compound">Entity</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Entity &gt; Registry::add_entity</definition>
+        <argsstring>(const std::string tag)</argsstring>
+        <name>add_entity</name>
+        <qualifiedname>Registry::add_entity</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="148" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref> &amp;</type>
+        <definition>EntityVector &amp; Registry::get_entities</definition>
+        <argsstring>(const std::string tag)</argsstring>
+        <name>get_entities</name>
+        <qualifiedname>Registry::get_entities</qualifiedname>
+        <param>
+          <type>const std::string</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="149" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Server_2include_2Entity_8hpp_1ace69d8a06cf49e191ab3fb4b5bf65085" kindref="member">EntityVector</ref> &amp;</type>
+        <definition>EntityVector &amp; Registry::get_entities</definition>
+        <argsstring>()</argsstring>
+        <name>get_entities</name>
+        <qualifiedname>Registry::get_entities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="150" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a34fd387f24d7d8cfa2bc923134acc38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classVector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D Registry::spawn_enemy</definition>
+        <argsstring>()</argsstring>
+        <name>spawn_enemy</name>
+        <qualifiedname>Registry::spawn_enemy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="151" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1abd72bee0e1a04c1996743dbfbb9a31b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::spawn_coin</definition>
+        <argsstring>()</argsstring>
+        <name>spawn_coin</name>
+        <qualifiedname>Registry::spawn_coin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="152" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1aae7e3c1a5a7cc768a9fee6b92930bf21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::spawn_player</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>spawn_player</name>
+        <qualifiedname>Registry::spawn_player</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="153" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegistry_1a6d530523aae13c6b709e314033d126f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Registry::remove_entity</definition>
+        <argsstring>(const size_t id)</argsstring>
+        <name>remove_entity</name>
+        <qualifiedname>Registry::remove_entity</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="154" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="138" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="138" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classRegistry_1a3a173441acf6a8cf5746be4944397a6d" prot="private" virt="non-virtual"><scope>Registry</scope><name>_entities_count</name></member>
+      <member refid="classRegistry_1a9efe71ac09132eb7c6583f2ea08653b8" prot="private" virt="non-virtual"><scope>Registry</scope><name>_entities_map</name></member>
+      <member refid="classRegistry_1a8d9f7500f8f76b3fd84f378da0582a3e" prot="private" virt="non-virtual"><scope>Registry</scope><name>_entities_vector</name></member>
+      <member refid="classRegistry_1a205a256cbf75ab251aa6a0086e3c9b2b" prot="private" virt="non-virtual"><scope>Registry</scope><name>_new_entities</name></member>
+      <member refid="classRegistry_1a175e1136557c0a34e380ae1e31913445" prot="public" virt="non-virtual"><scope>Registry</scope><name>add_entity</name></member>
+      <member refid="classRegistry_1a175e1136557c0a34e380ae1e31913445" prot="public" virt="non-virtual"><scope>Registry</scope><name>add_entity</name></member>
+      <member refid="classRegistry_1afbffaf13d8ec75c202d42dec47d21a2f" prot="public" virt="non-virtual"><scope>Registry</scope><name>entity_update</name></member>
+      <member refid="classRegistry_1afbffaf13d8ec75c202d42dec47d21a2f" prot="public" virt="non-virtual"><scope>Registry</scope><name>entity_update</name></member>
+      <member refid="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" prot="public" virt="non-virtual"><scope>Registry</scope><name>get_entities</name></member>
+      <member refid="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" prot="public" virt="non-virtual"><scope>Registry</scope><name>get_entities</name></member>
+      <member refid="classRegistry_1a413eb9a460c6a588c70b509c50e9a101" prot="public" virt="non-virtual"><scope>Registry</scope><name>get_entities</name></member>
+      <member refid="classRegistry_1aaf54a9f23617bec8da15e280c047e47b" prot="public" virt="non-virtual"><scope>Registry</scope><name>get_entities</name></member>
+      <member refid="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" prot="public" virt="non-virtual"><scope>Registry</scope><name>Registry</name></member>
+      <member refid="classRegistry_1acb15d8aa051bf36ea92a86ee6c00bc3c" prot="public" virt="non-virtual"><scope>Registry</scope><name>Registry</name></member>
+      <member refid="classRegistry_1a6d530523aae13c6b709e314033d126f7" prot="public" virt="non-virtual"><scope>Registry</scope><name>remove_entity</name></member>
+      <member refid="classRegistry_1a6d530523aae13c6b709e314033d126f7" prot="public" virt="non-virtual"><scope>Registry</scope><name>remove_entity</name></member>
+      <member refid="classRegistry_1abd72bee0e1a04c1996743dbfbb9a31b0" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_coin</name></member>
+      <member refid="classRegistry_1abd72bee0e1a04c1996743dbfbb9a31b0" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_coin</name></member>
+      <member refid="classRegistry_1a34fd387f24d7d8cfa2bc923134acc38e" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_enemy</name></member>
+      <member refid="classRegistry_1a34fd387f24d7d8cfa2bc923134acc38e" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_enemy</name></member>
+      <member refid="classRegistry_1aae7e3c1a5a7cc768a9fee6b92930bf21" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_player</name></member>
+      <member refid="classRegistry_1aae7e3c1a5a7cc768a9fee6b92930bf21" prot="public" virt="non-virtual"><scope>Registry</scope><name>spawn_player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

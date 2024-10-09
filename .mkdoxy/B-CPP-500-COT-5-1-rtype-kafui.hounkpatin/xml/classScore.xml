@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classScore" kind="class" language="C++" prot="public">
+    <compoundname>Score</compoundname>
+    <includes refid="GameLogic_2Entity_8hpp" local="no">Entity.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classScore_1ab7762ac220cc3beb4041b73b93a28e0d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::scoreValue</definition>
+        <argsstring></argsstring>
+        <name>scoreValue</name>
+        <qualifiedname>Score::scoreValue</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="108" column="7" bodyfile="src/GameLogic/Entity.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classScore_1a039c99843551e5e4b512ecee99e46617" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Score::Score</definition>
+        <argsstring>()</argsstring>
+        <name>Score</name>
+        <qualifiedname>Score::Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="111" column="3" bodyfile="src/GameLogic/Entity.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Score::set_score</definition>
+        <argsstring>(int new_score)</argsstring>
+        <name>set_score</name>
+        <qualifiedname>Score::set_score</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="113" column="8" bodyfile="src/GameLogic/Entity.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Score::getScore</definition>
+        <argsstring>()</argsstring>
+        <name>getScore</name>
+        <qualifiedname>Score::getScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameLogic/Entity.hpp" line="114" column="7" bodyfile="src/GameLogic/Entity.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classScore_1a039c99843551e5e4b512ecee99e46617" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Score::Score</definition>
+        <argsstring>()</argsstring>
+        <name>Score</name>
+        <qualifiedname>Score::Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="111" column="3" bodyfile="src/Server/include/Entity.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Score::set_score</definition>
+        <argsstring>(int new_score)</argsstring>
+        <name>set_score</name>
+        <qualifiedname>Score::set_score</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="113" column="8" bodyfile="src/Server/include/Entity.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Score::getScore</definition>
+        <argsstring>()</argsstring>
+        <name>getScore</name>
+        <qualifiedname>Score::getScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Server/include/Entity.hpp" line="114" column="7" bodyfile="src/Server/include/Entity.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/GameLogic/Entity.hpp" line="106" column="1" bodyfile="src/GameLogic/Entity.hpp" bodystart="106" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" prot="public" virt="non-virtual"><scope>Score</scope><name>getScore</name></member>
+      <member refid="classScore_1a8627c93270c188a3fd28a25b1d07a9e7" prot="public" virt="non-virtual"><scope>Score</scope><name>getScore</name></member>
+      <member refid="classScore_1a039c99843551e5e4b512ecee99e46617" prot="public" virt="non-virtual"><scope>Score</scope><name>Score</name></member>
+      <member refid="classScore_1a039c99843551e5e4b512ecee99e46617" prot="public" virt="non-virtual"><scope>Score</scope><name>Score</name></member>
+      <member refid="classScore_1ab7762ac220cc3beb4041b73b93a28e0d" prot="private" virt="non-virtual"><scope>Score</scope><name>scoreValue</name></member>
+      <member refid="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" prot="public" virt="non-virtual"><scope>Score</scope><name>set_score</name></member>
+      <member refid="classScore_1a457b8eaa7c78181c99ac48c6affe3dee" prot="public" virt="non-virtual"><scope>Score</scope><name>set_score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
