@@ -1,0 +1,201 @@
+site_name: Documentation
+site_url: https://analyticace.github.io/r-type-docs/
+site_description: >-
+  R-Type is a side-scrolling shoot-em-up arcade game produced by Irem in 1987. 
+  The player controls a space fighter named the R-9 to defend humanity against a mysterious powerful alien lifeform known as the Bydo. 
+  This repository contains the documentation for the game, including the source code, build instructions, and more.
+
+repo_name: AnalyticAce/r-type-docs
+repo_url: https://github.com/AnalyticAce/r-type-docs
+copyright: Copyright &copy; 2024 R-Type-Group - All rights reserved.
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  logo: assets/image/logo.png
+  favicon: assets/image/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# plugins:
+#     - search
+#     - mkdoxy:
+#           projects:
+#               B-CPP-500-COT-5-1-rtype-kafui.hounkpatin:
+#                   src-dirs: include/ src/
+#                   full-doc: True
+#                   doxy-cfg:
+#                       FILE_PATTERNS: "*.cpp *.hpp"
+#                       RECURSIVE: True
+#                       EXTRACT_ALL: True
+#           save-api: .mkdoxy
+#           full-doc: True
+#           debug: False
+#           ignore-errors: False
+#           emojis-enabled: True
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AnalyticAce
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shalom-dosseh-4a484a262/
+  analytics:
+    provider: google
+    property: G-8WHJ2N4SHC
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback!
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.highlight
+  - def_list
+  - toc:
+      permalink: True
+  - markdown.extensions.md_in_html
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.blocks.admonition:
+      types:
+        - new
+        - settings
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.tab
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - System Requirements: system_requirements.md
+      - Installation:
+          - Pre-requisites: installation/prerequisites.md
+          - Build Instructions: installation/build_instructions.md
+          - Running the Application: installation/running.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - ECS Design Pattern: architecture/ecs.md
+      - Game Engine: architecture/engine.md
+      - Server & Client: architecture/server_client.md
+      
+  - Developer Guide:
+      - Snippets:
+          - Classes: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/classes.md"
+          - Links: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/links.md"
+          - Functions: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/functions.md"
+          - Namespaces: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/namespaces.md"
+          - Files: "B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/files.md"
+      - API Documentation:
+          - Class List: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/annotated.md
+          - Class Index: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/classes.md
+          - Class Hierarchy: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/hierarchy.md
+          - Class Members: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_members.md
+          - Class Member Functions: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_functions.md
+          - Class Member Variables: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_variables.md
+          - Class Member Typedefs: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_typedefs.md
+          - Class Member Enumerations: B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_member_enums.md
+      - Contributing: developer_guide/contributing.md
+  - Networking:
+      - Protocol Documentation: protocol.md
+      - Security & Performance: security_performance.md
+  - Testing & CI/CD:
+      - Unit Tests: testing_ci_cd.md
+      - Continuous Integration: ci_cd.md
+  - User Guide:
+      - Gameplay Overview: user_documentation/gameplay_overview.md
+      - Controls: user_documentation/controls.md
+      - Multiplayer Setup: user_documentation/multiplayer_setup.md
+  - Additional Information:
+      - Accessibility: accessibility.md
+      - References: references.md
+      - License Information: appendix/license.md
