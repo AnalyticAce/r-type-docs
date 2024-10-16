@@ -54,22 +54,22 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-plugins:
-    - search
-    - mkdoxy:
-          projects:
-              B-CPP-500-COT-5-1-rtype-kafui.hounkpatin:
-                  src-dirs: include/ src/
-                  full-doc: True
-                  doxy-cfg:
-                      FILE_PATTERNS: "*.cpp *.hpp"
-                      RECURSIVE: True
-                      EXTRACT_ALL: True
-          save-api: .mkdoxy
-          full-doc: True
-          debug: False
-          ignore-errors: False
-          emojis-enabled: True
+# plugins:
+#     - search
+#     - mkdoxy:
+#           projects:
+#               B-CPP-500-COT-5-1-rtype-kafui.hounkpatin:
+#                   src-dirs: include/ src/
+#                   full-doc: True
+#                   doxy-cfg:
+#                       FILE_PATTERNS: "*.cpp *.hpp"
+#                       RECURSIVE: True
+#                       EXTRACT_ALL: True
+#           save-api: .mkdoxy
+#           full-doc: True
+#           debug: False
+#           ignore-errors: False
+#           emojis-enabled: True
 
 extra:
   social:
