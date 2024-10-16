@@ -1,0 +1,2967 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="R-Type is a side-scrolling shoot-em-up arcade game produced by Irem in 1987.  The player controls a space fighter named the R-9 to defend humanity against a mysterious powerful alien lifeform known as the Bydo.  This repository contains the documentation for the game, including the source code, build instructions, and more.">
+      
+      
+      
+        <link rel="canonical" href="https://analyticace.github.io/r-type-docs/B-CPP-500-COT-5-1-rtype-kafui.hounkpatin/class_members/">
+      
+      
+        <link rel="prev" href="../hierarchy/">
+      
+      
+        <link rel="next" href="../class_member_functions/">
+      
+      
+      <link rel="icon" href="../../assets/image/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>Class Members - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8WHJ2N4SHC"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8WHJ2N4SHC",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8WHJ2N4SHC",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-members" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../assets/image/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class Members
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AnalyticAce/r-type-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AnalyticAce/r-type-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../system_requirements/" class="md-tabs__link">
+          
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../architecture/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../classes/" class="md-tabs__link">
+          
+  
+    
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../protocol/" class="md-tabs__link">
+          
+  
+    
+  
+  Networking
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing_ci_cd/" class="md-tabs__link">
+          
+  
+    
+  
+  Testing & CI/CD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user_documentation/gameplay_overview/" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../accessibility/" class="md-tabs__link">
+          
+  
+    
+  
+  Additional Information
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../assets/image/logo.png" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AnalyticAce/r-type-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AnalyticAce/r-type-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-requisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/build_instructions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Instructions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/running/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running the Application
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/ecs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ECS Design Pattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Game Engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/server_client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server & Client
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Developer Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Snippets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Snippets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annotated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hierarchy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Hierarchy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Class Members
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Class Members
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      a
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      b
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      e
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      f
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      g
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      h
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      i
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      j
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      k
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      l
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      m
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      n
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      p
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      r
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      t
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      u
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      v
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      w
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    <span class="md-ellipsis">
+      x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    <span class="md-ellipsis">
+      y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_" class="md-nav__link">
+    <span class="md-ellipsis">
+      _
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Member Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Member Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_typedefs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Member Typedefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_member_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Member Enumerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_guide/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Networking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security_performance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security & Performance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Testing & CI/CD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & CI/CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing_ci_cd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci_cd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_documentation/gameplay_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gameplay Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_documentation/controls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_documentation/multiplayer_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiplayer Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Additional Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      a
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      b
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      e
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      f
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    <span class="md-ellipsis">
+      g
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      h
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      i
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      j
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    <span class="md-ellipsis">
+      k
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" class="md-nav__link">
+    <span class="md-ellipsis">
+      l
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      m
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      n
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      p
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" class="md-nav__link">
+    <span class="md-ellipsis">
+      r
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" class="md-nav__link">
+    <span class="md-ellipsis">
+      t
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      u
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" class="md-nav__link">
+    <span class="md-ellipsis">
+      v
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" class="md-nav__link">
+    <span class="md-ellipsis">
+      w
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    <span class="md-ellipsis">
+      x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    <span class="md-ellipsis">
+      y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_" class="md-nav__link">
+    <span class="md-ellipsis">
+      _
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="class-members">Class Members<a class="headerlink" href="#class-members" title="Permanent link">&para;</a></h1>
+<h2 id="a">a<a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Animation</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>animations</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>animationsData</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>AudioManager</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>assign_enemy</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>Asteriod1</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>Asteriod2</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>Asteriod3</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>activeInput</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>addScreen</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>attack</strong> (<a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>applyChanges</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>applyChangesButtonImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>asteroid_1</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>asteroid_2</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>asteroid_3</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>asteroid_4</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>audioManager</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>add_entity</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>add_threads</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+<li><strong>add</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>animation</strong> (<a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>add_new_param</strong> (<a href="../structparameter__t/"><strong>parameter_t</strong></a>)</li>
+<li><strong>argument</strong> (<a href="../structparameter__t/"><strong>parameter_t</strong></a>)</li>
+<li><strong>action_type</strong> (<a href="../structprotocol_1_1PlayerAction/"><strong>protocol::PlayerAction</strong></a>)</li>
+</ul>
+<h2 id="b">b<a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>buffer</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>BBox</strong> (<a href="../classBBox/"><strong>BBox</strong></a>)</li>
+<li><strong>ButtonSound</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>backgroundImage</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>bbox</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>backButtonImage</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>button</strong> (<a href="../classInputManager/"><strong>InputManager</strong></a>)</li>
+</ul>
+<h2 id="c">c<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>currentFrame</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../structAnimationData/"><strong>AnimationData</strong></a>)</li>
+<li><strong>clock</strong> (<a href="../structAnimationData/"><strong>AnimationData</strong></a>, <a href="../structTemporaryText/"><strong>TemporaryText</strong></a>)</li>
+<li><strong>Client</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>create_player_1</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>create_player_2</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>create_player_3</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>create_player_4</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>create_random_enemy</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>checkCoins</strong> (<a href="../classCoinSystem/"><strong>CoinSystem</strong></a>)</li>
+<li><strong>CollisionSystem</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>check_collision</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>collision_enemy_projectiles</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>collision_player_enemy</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>collison_player_coins</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>centerImage</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>createEnamies5</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnamies6</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnamies7</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnamies8</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnamies9</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnamiesBoss</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnemies</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnemies2</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnemies3</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createEnemies4</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createPlayer1</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>createPlayer2</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>client</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>currentScreen</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>currentHealth</strong> (<a href="../classHealth/"><strong>Health</strong></a>)</li>
+<li><strong>checkHealth</strong> (<a href="../classHealthSystem/"><strong>HealthSystem</strong></a>)</li>
+<li><strong>createImage</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>currentResolutionIndex</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>create_room</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>check_player_message</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>check_player_position</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>clients</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>clients_me</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>coinTimer</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>coin_count</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>collision</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>check_me</strong> (<a href="../structparameter__t/"><strong>parameter_t</strong></a>)</li>
+</ul>
+<h2 id="d">d<a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>destroy</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>drawAsteriodFour</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>drawAsteriodOne</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>drawAsteriodThree</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>drawAsteriodTwo</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>drawBackground</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawGameLobby</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawLifeBoard</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>drawTeamScore</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>drawGameSetting</strong> (<a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>)</li>
+<li><strong>drawBackButton</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>drawRoomLobby</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>destroyImage</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>draw</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>, <a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>down</strong> (<a href="../classInput/"><strong>Input</strong></a>, <a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>decreaseResolution</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>decreaseVolume</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawMainMenu</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawSettingsBackground</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawSettingsElements</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawSoundToggle</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>drawCircle</strong> (<a href="../classShapeManager/"><strong>ShapeManager</strong></a>)</li>
+<li><strong>drawRectangle</strong> (<a href="../classShapeManager/"><strong>ShapeManager</strong></a>)</li>
+<li><strong>duration</strong> (<a href="../structTemporaryText/"><strong>TemporaryText</strong></a>)</li>
+<li><strong>drawText</strong> (<a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>drawTextTemporarily</strong> (<a href="../classTextManager/"><strong>TextManager</strong></a>)</li>
+<li><strong>dot</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>data</strong> (<a href="../structprotocol_1_1PlayerAction/"><strong>protocol::PlayerAction</strong></a>)</li>
+</ul>
+<h2 id="e">e<a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>enemie1</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie2</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie3</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie4</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie5</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie6</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie7</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie8</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemie9</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemieBoss</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemies</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>enemies_id</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>event</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>Entity</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>enemies1</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies2</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies3</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies4</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies5</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies6</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies7</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies8</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemies9</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>enemiesBoss</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>escape</strong> (<a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>enemy_move</strong> (<a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>enemyTimer</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>enemy_count</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>event_data</strong> (<a href="../structprotocol_1_1EventNotification/"><strong>protocol::EventNotification</strong></a>)</li>
+<li><strong>event_type</strong> (<a href="../structprotocol_1_1EventNotification/"><strong>protocol::EventNotification</strong></a>)</li>
+</ul>
+<h2 id="f">f<a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>frameTime</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>font</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>fitToScreen</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+</ul>
+<h2 id="g">g<a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>getPosition</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>getSprite</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>GamePlayImage</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>game_over</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>get_enemy_color</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>get_name</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>get_player_color</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>GameCore</strong> (<a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>)</li>
+<li><strong>GameLobby</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>GameLobbyImage</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getAsteriodFourSprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>getAsteriodOneSprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>getAsteriodThreeSprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>getAsteriodTwoSprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>getBackgroundSprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getButtonSound</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getGameLobbySprite</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getMouse</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getRect1</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getRect2</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getRoomMusic</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>GamePlay</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>getLifeBoardSprite</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>getTeamScoreSprite</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>GameSetting</strong> (<a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>)</li>
+<li><strong>GameSettingImage</strong> (<a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>)</li>
+<li><strong>getGameSettingSprite</strong> (<a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>)</li>
+<li><strong>getBackButtonSprite</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getRect3</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getRect4</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getRoomLobbySprite</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getTextIp</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getTextName</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getTextPort</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>getGlobalBounds</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>getButton</strong> (<a href="../classInputManager/"><strong>InputManager</strong></a>)</li>
+<li><strong>getPlayButtonSprite</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>goBackButtonImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>getMouseX</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>)</li>
+<li><strong>getMouseY</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>)</li>
+<li><strong>get_entities</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>getScore</strong> (<a href="../classScore/"><strong>Score</strong></a>)</li>
+<li><strong>game_run</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>get_player_entity</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>get_player_id</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>get_player_name</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>GetWindow</strong> (<a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>getElapsedTimeInSeconds</strong> (<a href="../classTimeManager/"><strong>TimeManager</strong></a>)</li>
+</ul>
+<h2 id="h">h<a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>health</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>handleEvent</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>, <a href="../classIScreen/"><strong>IScreen</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>Health</strong> (<a href="../classHealth/"><strong>Health</strong></a>)</li>
+<li><strong>handleInput</strong> (<a href="../classInputManager/"><strong>InputManager</strong></a>, <a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>handleButtonClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleEvents</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleMouseEvents</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleNavigationClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleResolutionClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleSettingsClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleSettingsEvents</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleSoundToggleClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleVolumeClicks</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleWindowEvents</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>handleMousePosition</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>)</li>
+<li><strong>handle_client_ping</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>handle_list_rooms</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>handle_room_creation</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>handle_room_joining</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>handle_tcp_connection</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+</ul>
+<h2 id="i">i<a class="headerlink" href="#i" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>input</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classEntity/"><strong>Entity</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>inputIp</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>inputName</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>inputPort</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>ImageManager</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>Input</strong> (<a href="../classInput/"><strong>Input</strong></a>)</li>
+<li><strong>InputManager</strong> (<a href="../classInputManager/"><strong>InputManager</strong></a>)</li>
+<li><strong>increaseResolution</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>increaseVolume</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>infButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>initializeMusic</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>inputManager</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>isSoundOn</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>in_game</strong> (<a href="../structRoom__System_1_1Room/"><strong>Room_System::Room</strong></a>)</li>
+<li><strong>id_name</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>io_context</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+</ul>
+<h2 id="j">j<a class="headerlink" href="#j" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>join_room</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+</ul>
+<h2 id="k">k<a class="headerlink" href="#k" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>keepOpen</strong> (<a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+</ul>
+<h2 id="l">l<a class="headerlink" href="#l" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>loadAnimation</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>LifeBoardImage</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>loadFont</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>left</strong> (<a href="../classInput/"><strong>Input</strong></a>, <a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>loadAndSetupImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>loadImages</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>loadResolutionImages</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>loadVolumeImages</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>leave_room</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>list_available_rooms</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>last_ping</strong> (<a href="../structServer_1_1ClientInfo/"><strong>Server::ClientInfo</strong></a>)</li>
+<li><strong>length</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>length_squared</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="m">m<a class="headerlink" href="#m" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>moveXLeft</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>moveXRight</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>moveY</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>moveYUp</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>music</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>mouse</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>maxHealth</strong> (<a href="../classHealth/"><strong>Health</strong></a>)</li>
+<li><strong>Menu</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>moinsButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>mouseManager</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>MouseManager</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>)</li>
+<li><strong>MouvementSystem</strong> (<a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>move_player</strong> (<a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>max_players</strong> (<a href="../structRoom__System_1_1Room/"><strong>Room_System::Room</strong></a>)</li>
+<li><strong>movement</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+</ul>
+<h2 id="n">n<a class="headerlink" href="#n" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>name</strong> (<a href="../classEntity/"><strong>Entity</strong></a>, <a href="../className/"><strong>Name</strong></a>, <a href="../structRoom__System_1_1Room/"><strong>Room_System::Room</strong></a>, <a href="../structparameter__t/"><strong>parameter_t</strong></a>)</li>
+<li><strong>Name</strong> (<a href="../className/"><strong>Name</strong></a>)</li>
+<li><strong>next_room_id</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>notify_clients_of_disconnection</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>normalize</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="o">o<a class="headerlink" href="#o" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>operator()</strong> (<a href="../structEndpointEqual/"><strong>EndpointEqual</strong></a>, <a href="../structEndpointHash/"><strong>EndpointHash</strong></a>)</li>
+<li><strong>offImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>onImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>openSettings</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>operator/</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>operator/=</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="p">p<a class="headerlink" href="#p" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>pauseMusic</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>playMusic</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>playSound</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>player1</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>player2</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>players</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../structRoom__System_1_1Room/"><strong>Room_System::Room</strong></a>)</li>
+<li><strong>players_id</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>projectiles</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>projectiles_id</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>playIsDown</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>playIsLeft</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>playIsRight</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>playIsUp</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>plusButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>Parallax</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>players_count</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>process_message</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>process_message_contain</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>projectile_count</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>position</strong> (<a href="../classTransform/"><strong>Transform</strong></a>)</li>
+<li><strong>player_id</strong> (<a href="../structprotocol_1_1PlayerAction/"><strong>protocol::PlayerAction</strong></a>)</li>
+</ul>
+<h2 id="r">r<a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>render</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>, <a href="../classIScreen/"><strong>IScreen</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>, <a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>resumeMusic</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>RoomMusic</strong> (<a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>roomLobby</strong> (<a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>)</li>
+<li><strong>run</strong> (<a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>rect1</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>rect2</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>RoomLobby</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>RoomLobbyImage</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>rect3</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>rect4</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>reset</strong> (<a href="../classInput/"><strong>Input</strong></a>)</li>
+<li><strong>right</strong> (<a href="../classInput/"><strong>Input</strong></a>, <a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>renderSettings</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>resolutionSprite</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>resolutionTextures</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>resolutions</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>remove_entity</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>Room_System</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>remove_room</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>rooms</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>registry</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>room_system</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>run_game</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>release</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+<li><strong>remove_threads</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+<li><strong>restart</strong> (<a href="../classTimeManager/"><strong>TimeManager</strong></a>)</li>
+<li><strong>rotate</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="s">s<a class="headerlink" href="#s" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>setPosition</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>setScale</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>sprite</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../structAnimationData/"><strong>AnimationData</strong></a>, <a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>setMusicVolume</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>setPitch</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>setSoundVolume</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>sound</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>size</strong> (<a href="../classBBox/"><strong>BBox</strong></a>)</li>
+<li><strong>send_tcp_message</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>send_udp_message</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>server_tcp_ip</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>server_udp_ip</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>shapeManager1</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>shapeManager2</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>score</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>screenManager</strong> (<a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>setAsteriodFour</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>setAsteriodOne</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>setAsteriodThree</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>setAsteriodTwo</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>setBackground</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>setGameLobby</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>)</li>
+<li><strong>shapebuilder</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>setLifeBoard</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>setTeamScore</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>spawnRandomEnemies</strong> (<a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>setGameSetting</strong> (<a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>)</li>
+<li><strong>setBackButton</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>setRoomLobby</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>shapeManager3</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>shapeManager4</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>ScreenManager</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>screens</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>switchToScreen</strong> (<a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>)</li>
+<li><strong>shoot</strong> (<a href="../classInput/"><strong>Input</strong></a>, <a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>screenResolutionImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>screen_infButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>screen_supButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>setVolumeImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>settingsButtonImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>settingsOpen</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>soundImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>startButtonImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>supButton</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>system_movement</strong> (<a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>speed1</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>speed2</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>sprite1</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>sprite2</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>start_game_in_room</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>Score</strong> (<a href="../classScore/"><strong>Score</strong></a>)</li>
+<li><strong>scoreValue</strong> (<a href="../classScore/"><strong>Score</strong></a>)</li>
+<li><strong>set_score</strong> (<a href="../classScore/"><strong>Score</strong></a>)</li>
+<li><strong>Server</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>send_udp_with_ack</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>shootTimer</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>start_heartbeat_monitor</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>start_tcp_server</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>start_udp_server</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>ShapeManager</strong> (<a href="../classShapeManager/"><strong>ShapeManager</strong></a>)</li>
+<li><strong>spawn_projectile</strong> (<a href="../classShootSystem/"><strong>ShootSystem</strong></a>)</li>
+<li><strong>start</strong> (<a href="../classTimeManager/"><strong>TimeManager</strong></a>)</li>
+<li><strong>scale</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>SetWindowSize</strong> (<a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>state_data</strong> (<a href="../structprotocol_1_1GameStateUpdate/"><strong>protocol::GameStateUpdate</strong></a>)</li>
+</ul>
+<h2 id="t">t<a class="headerlink" href="#t" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>texture</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>totalFrames</strong> (<a href="../structAnimationData/"><strong>AnimationData</strong></a>)</li>
+<li><strong>TeamScoreImage</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>)</li>
+<li><strong>transform</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>textip</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>textname</strong> (<a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>textfieldsetter</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>textport</strong> (<a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>)</li>
+<li><strong>takeDamage</strong> (<a href="../classHealth/"><strong>Health</strong></a>)</li>
+<li><strong>texture1</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>texture2</strong> (<a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>text</strong> (<a href="../structTemporaryText/"><strong>TemporaryText</strong></a>)</li>
+<li><strong>TextManager</strong> (<a href="../classTextManager/"><strong>TextManager</strong></a>)</li>
+<li><strong>tempTexts</strong> (<a href="../classTextManager/"><strong>TextManager</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>ThreadPool</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+<li><strong>thread_pool</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+<li><strong>TimeManager</strong> (<a href="../classTimeManager/"><strong>TimeManager</strong></a>)</li>
+<li><strong>Transform</strong> (<a href="../classTransform/"><strong>Transform</strong></a>)</li>
+<li><strong>tcp_port</strong> (<a href="../structserver__me__t/"><strong>server_me_t</strong></a>)</li>
+</ul>
+<h2 id="u">u<a class="headerlink" href="#u" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>update</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>, <a href="../classGameUI_1_1GameLobby/"><strong>GameUI::GameLobby</strong></a>, <a href="../classGameUI_1_1GamePlay/"><strong>GameUI::GamePlay</strong></a>, <a href="../classGameUI_1_1GameSetting/"><strong>GameUI::GameSetting</strong></a>, <a href="../classGameUI_1_1RoomLobby/"><strong>GameUI::RoomLobby</strong></a>, <a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>, <a href="../classIScreen/"><strong>IScreen</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>, <a href="../classParallax/"><strong>Parallax</strong></a>)</li>
+<li><strong>up</strong> (<a href="../classInput/"><strong>Input</strong></a>, <a href="../structInputManager_1_1Button/"><strong>InputManager::Button</strong></a>)</li>
+<li><strong>updateElementPosition</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>updateElementPositions</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>updateResolutionImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>updateVolumeImage</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>updateTimer</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>usage</strong> (<a href="../structparameter__t/"><strong>parameter_t</strong></a>)</li>
+<li><strong>udp_port</strong> (<a href="../structserver__me__t/"><strong>server_me_t</strong></a>)</li>
+</ul>
+<h2 id="v">v<a class="headerlink" href="#v" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>volumeLevel</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>volumeSprite</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>volumeTextures</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>velocity</strong> (<a href="../classTransform/"><strong>Transform</strong></a>)</li>
+<li><strong>Vector2D</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+<li><strong>vector_unit</strong> (<a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="w">w<a class="headerlink" href="#w" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>window</strong> (<a href="../classClient/"><strong>Client</strong></a>, <a href="../classGameUI_1_1GameCore/"><strong>GameUI::GameCore</strong></a>, <a href="../classGameUI_1_1ScreenManager/"><strong>GameUI::ScreenManager</strong></a>, <a href="../classMenu/"><strong>Menu</strong></a>, <a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+<li><strong>window_manager</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>windowManager</strong> (<a href="../classMenu/"><strong>Menu</strong></a>)</li>
+<li><strong>WindowManager</strong> (<a href="../classWindowManager/"><strong>WindowManager</strong></a>)</li>
+</ul>
+<h2 id="x">x<a class="headerlink" href="#x" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>x</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>, <a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="y">y<a class="headerlink" href="#y" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>y</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>, <a href="../classVector2D/"><strong>Vector2D</strong></a>)</li>
+</ul>
+<h2 id="_1">~<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>~Animation</strong> (<a href="../classAnimation/"><strong>Animation</strong></a>)</li>
+<li><strong>~AudioManager</strong> (<a href="../classAudioManager/"><strong>AudioManager</strong></a>)</li>
+<li><strong>~Client</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>~CollisionSystem</strong> (<a href="../classCollisionSystem/"><strong>CollisionSystem</strong></a>)</li>
+<li><strong>~IScreen</strong> (<a href="../classIScreen/"><strong>IScreen</strong></a>)</li>
+<li><strong>~ImageManager</strong> (<a href="../classImageManager/"><strong>ImageManager</strong></a>)</li>
+<li><strong>~InputManager</strong> (<a href="../classInputManager/"><strong>InputManager</strong></a>)</li>
+<li><strong>~MouseManager</strong> (<a href="../classMouseManager/"><strong>MouseManager</strong></a>)</li>
+<li><strong>~MouvementSystem</strong> (<a href="../classMouvementSystem/"><strong>MouvementSystem</strong></a>)</li>
+<li><strong>~Room_System</strong> (<a href="../classRoom__System/"><strong>Room_System</strong></a>)</li>
+<li><strong>~Server</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>~ShapeManager</strong> (<a href="../classShapeManager/"><strong>ShapeManager</strong></a>)</li>
+<li><strong>~ThreadPool</strong> (<a href="../classThreadPool/"><strong>ThreadPool</strong></a>)</li>
+</ul>
+<h2 id="_">_<a class="headerlink" href="#_" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>_health</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>_io_context</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>_receiver_endpoint</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>_score</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>_soc</strong> (<a href="../classClient/"><strong>Client</strong></a>)</li>
+<li><strong>_alive</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>_id</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>_tag</strong> (<a href="../classEntity/"><strong>Entity</strong></a>)</li>
+<li><strong>_entities_count</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>_entities_map</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>_entities_vector</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>_new_entities</strong> (<a href="../classRegistry/"><strong>Registry</strong></a>)</li>
+<li><strong>_connected_clients</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>_game_time_manager</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+<li><strong>_name</strong> (<a href="../classServer/"><strong>Server</strong></a>)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../hierarchy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Class Hierarchy">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Class Hierarchy
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../class_member_functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Class Member Functions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Class Member Functions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 R-Type-Group - All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/AnalyticAce" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/shalom-dosseh-4a484a262/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
